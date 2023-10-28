@@ -1,10 +1,6 @@
 
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
-body {
-  background: hsla(0, 0%, 0%, .9); 
-}
-
 h1 {
   color: hsla(0, 0%, 0%, .9);
   font: normal 140px Varela Round, sans-serif;

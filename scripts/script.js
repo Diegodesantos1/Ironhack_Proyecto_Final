@@ -1,15 +1,27 @@
-palabras=["PERRO"]
+palabras = ["PERRO"];
 let palabraFinal = palabras[Math.floor(Math.random() * palabras.length)];
 let intentos = 6;
 let historialAdivinanzas = [];
 
 document.getElementById("submit").addEventListener("click", () => {
-  if (document.getElementById("guess").value.length !== palabraFinal.length) {
+  jugar();
+});
+
+const guessInput = document.getElementById("guess");
+
+// Agregar un evento al presionar la tecla "Enter" en el campo de entrada
+guessInput.addEventListener("keyup", (event) => {
+  if (event.key === "Enter") {
+    jugar();
+  }
+});
+
+function jugar() {
+  if (guessInput.value.length !== palabraFinal.length) {
     alert(`Debes ingresar una palabra de ${palabraFinal.length} letras.`);
     return;
   }
 
-  const guessInput = document.getElementById("guess");
   const guess = guessInput.value.toUpperCase();
   guessInput.value = "";
 
@@ -43,14 +55,13 @@ document.getElementById("submit").addEventListener("click", () => {
   const br = document.createElement("br");
   document.getElementById("guess-history").appendChild(br);
 
-
   intentos--;
   document.getElementById("attempts").textContent = intentos;
   if (intentos >= 0 && palabraFinal === guess) {
     window.location.href = "victoria.html"; // Redirige al jugador a la página "ganaste.html" al ganar
   }
   // si el jugador falla en el último intento, se le redirige a la página "derrota.html"
-  else if (intentos === 0 && palabraFinal !== guess){
+  else if (intentos === 0 && palabraFinal !== guess) {
     window.location.href = "derrota.html";
   }
-});
+}

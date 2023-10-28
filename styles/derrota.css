@@ -1,29 +1,38 @@
+#title {
+  font-size: 4rem;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  top: 100px;
+}
+
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #ff6b6b;
-  /* Color de fondo de la página */
+  background-color: #FF7F7F;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   margin: 0;
-  overflow: hidden;
-  /* Oculta el desbordamiento para evitar la pantalla azul */
+  height: 700px;
 }
 
 #container {
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   text-align: center;
-  color: #fff;
 }
 
-h1 {
+h2 {
   font-size: 36px;
   margin: 0;
 }
 
-p {
-  font-size: 24px;
-}
+
 
 button {
   background-color: #007bff;
