@@ -14,6 +14,11 @@ document.getElementById("submit").addEventListener("click", () => {
   guessInput.value = "";
 
   let displayWord = "";
+  // comprueba que la palabra introducida esté denttro del array de palabras
+  if (!palabras.includes(guess)) {
+    alert("La palabra ingresada no es válida.");
+    return;
+  }
 
   const correctLetters = new Set();
   const incorrectLetters = new Set();
