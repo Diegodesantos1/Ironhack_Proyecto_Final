@@ -65,14 +65,19 @@ button:hover {
 
 .green {
   color: green;
+  border-color: black;
 }
 
 .yellow {
   color: yellow;
+  border-color: black;
+
 }
 
 .red {
   color: red;
+  border-color: black;
+
 }
 
 #guess-history {

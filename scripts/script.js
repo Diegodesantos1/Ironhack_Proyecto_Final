@@ -50,7 +50,7 @@ document.getElementById("submit").addEventListener("click", () => {
   if (intentos !== 0 && palabraFinal === guess) {
     window.location.href = "victoria.html"; // Redirige al jugador a la página "ganaste.html" al ganar
   }
-  else if (intentos === 0) {
+  else if (intentos === 0 && !palabraFinal === guess) {
     window.location.href = "derrota.html";
   }
 });
