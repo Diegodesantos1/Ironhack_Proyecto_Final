@@ -1,10 +1,22 @@
+
+#title {
+  font-size: 4rem; /* Ajusta el tamaño según tus preferencias */
+  text-align: center;
+  margin-top: -300px; /* Espacio desde la parte superior */
+  color: #000000; /* Color del texto, ajusta según tus preferencias */
+  text-transform: uppercase; /* Para mostrar el texto en mayúsculas */
+  font-weight: bold; /* Texto en negritas */
+  position: absolute;
+  margin-bottom: 600px;
+}
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f2f2f2;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 150vh;
   margin: 0;
 }
 
@@ -56,28 +68,27 @@ button:hover {
   color: #ff6347;
 }
 
-.letter {
-  font-weight: bold;
-  font-size: 20px;
-  margin: 5px;
 
+.green, .yellow, .red {
+  font-size: 24px; /* Tamaño de fuente más grande */
+  border: 2px solid white; /* Contorno blanco */
+  padding: 5px; /* Espacio alrededor del texto */
+  border-radius: 4px; /* Borde redondeado */
+  margin-right: 5px; /* Espacio entre los elementos */
+  margin-top: 20px; /* Espacio desde la parte superior */
+  margin-bottom: 20px; /* Espacio desde la parte inferior */
 }
 
 .green {
   color: green;
-  border-color: black;
 }
 
 .yellow {
   color: yellow;
-  border-color: black;
-
 }
 
 .red {
   color: red;
-  border-color: black;
-
 }
 
 #guess-history {
@@ -86,6 +97,6 @@ button:hover {
   font-size: 20px;
   text-align: left;
   position: absolute;
-  margin-bottom: 350px;
+  margin-bottom: 500px;
 
 }
