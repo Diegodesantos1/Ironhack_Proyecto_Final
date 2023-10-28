@@ -58,6 +58,9 @@ button:hover {
 
 .letter {
   font-weight: bold;
+  font-size: 20px;
+  margin: 5px;
+
 }
 
 .green {
@@ -73,7 +76,11 @@ button:hover {
 }
 
 #guess-history {
+  display: flexbox;
   margin-top: 20px;
   font-size: 20px;
   text-align: left;
+  position: absolute;
+  margin-bottom: 350px;
+
 }
