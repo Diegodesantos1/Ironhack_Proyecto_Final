@@ -95,3 +95,11 @@ function jugar() {
   window.location.href = 'index.html';
   });
 }}});
+
+
+//accede a data/pokemons/001.png y añade la imagen a la página
+const img = document.createElement('img');
+//ahora busca la palabrafinal en la carpeta data/pokemon.json y en el diccionario mira el valor id y añade el valor id a la url
+
+//ahora añade la imagen a la página
+img.src = `data/pokemons/${palabraFinal}.png`;

@@ -9,10 +9,9 @@
 }
 
 
-
 body {
   font-family: 'Arial', sans-serif;
-  background: hsla(0, 0%, 0%, .9);
+  background:#F0F0D8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,7 +67,7 @@ button {
 /* Estilos para las letras adivinadas */
 .green, .yellow, .red {
   font-size: 24px;
-  border: 2px solid white;
+  border: 2px solid rgb(0, 0, 0);
   padding: 5px;
   border-radius: 4px;
   margin-right: 5px;
