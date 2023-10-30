@@ -56,7 +56,11 @@ button {
   border-radius: 4px;
   cursor: pointer;
   outline: none;
-  margin-left: 30px;
+  margin-top: 5px;
+}
+
+button:hover {
+  background-color: #41c5e6;
 }
 
 #result {
