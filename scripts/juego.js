@@ -42,11 +42,16 @@ document.addEventListener("DOMContentLoaded", () => {
       alert(`Debes ingresar una palabra de ${palabraFinal.length} letras.`);
       return;
     }
-
     const guess = guessInput.value.toUpperCase();
     guessInput.value = "";
 
     let displayWord = "";
+
+    //Compruebo que la palabra pertenece a la lista de palabras
+    if (!palabras.includes(guess)) {
+      alert("Esa palabra no está en la lista.");
+      return;
+    }
 
     const correctLetters = new Set();
     const incorrectLetters = new Set();
