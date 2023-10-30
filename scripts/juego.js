@@ -20,14 +20,14 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log(palabraFinal);
 
   // Defino las variables de las imágenes
-  const imagenPokemonSolucion = document.getElementById("solucion");
+  //const imagenPokemonSolucion = document.getElementById("solucion");
   const imagenPokemonSilueta = document.getElementById("silueta");
   const imagenPokemonBorrosaColor = document.getElementById("borrosa-color");
   const imagenPokemonBorrosa = document.getElementById("borrosa");
   const imagenPokemonMuyBorrosa = document.getElementById("muy-borrosa");
 
   // Defino las rutas de las imágenes
-  imagenPokemonSolucion.src = `data/pokemon/${palabraFinal}.png`;
+  // imagenPokemonSolucion.src = `data/solucion_pokemon/${palabraFinal}.png`;
   imagenPokemonSilueta.src = `data/siluetas_pokemon/${palabraFinal}.png`;
   imagenPokemonBorrosaColor.src = `data/siluetas_colores_borrosas/${palabraFinal}.png`;
   imagenPokemonBorrosa.src = `data/siluetas_grises_borrosas/${palabraFinal}.png`;
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Oculto las imágenes
   imagenPokemonSilueta.style.display = "none";
-  imagenPokemonSolucion.style.display = "none";
+  // imagenPokemonSolucion.style.display = "none";
   imagenPokemonBorrosaColor.style.display = "none";
   imagenPokemonBorrosa.style.display = "none";
   imagenPokemonMuyBorrosa.style.display = "none";
@@ -125,11 +125,8 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("mensaje-victoria").style.display = "block";
       const victoria = document.createElement("div");
       victoria.innerHTML = "¡Has ganado!";
-      //añade la imagen del pokemon
-      imagenPokemonSolucion.style.display = "block";
       //añade el botón de volver a jugar
       document.getElementById("submit").style.display = "none";
-      imagenPokemonSolucion.style.display = "block";
       // Haz que aparezca el botón de volver a jugar
       document.getElementById("volver-a-jugar").style.display = "block";
       const volverAJugarButton = document.getElementById('volver-a-jugar');
@@ -150,7 +147,6 @@ document.addEventListener("DOMContentLoaded", () => {
       solucionElement.innerHTML = palabraSolucion;
       //ahora haz que no puedas seguir jugando
       document.getElementById("submit").style.display = "none";
-      imagenPokemonSolucion.style.display = "block";
       // Haz que aparezca el botón de volver a jugar
       document.getElementById("volver-a-jugar").style.display = "block";
       const volverAJugarButton = document.getElementById('volver-a-jugar');
