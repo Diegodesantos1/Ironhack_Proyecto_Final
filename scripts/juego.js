@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Defino las variables de las imágenes
 
-  //const imagenPokemonSolucion = document.getElementById("solucion");
+  const imagenPokemonSolucion = document.getElementById("resultado");
   const imagenPokemonSilueta = document.getElementById("silueta");
   const imagenPokemonBorrosaColor = document.getElementById("borrosa-color");
   const imagenPokemonBorrosa = document.getElementById("borrosa");
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Defino las rutas de las imágenes
 
-  // imagenPokemonSolucion.src = `data/solucion_pokemon/${palabraFinal}.png`;
+  imagenPokemonSolucion.src = `data/soluciones/${palabraFinal}.png`;
   imagenPokemonSilueta.src = `data/siluetas_pokemon/${palabraFinal}.png`;
   imagenPokemonBorrosaColor.src = `data/siluetas_colores_borrosas/${palabraFinal}.png`;
   imagenPokemonBorrosa.src = `data/siluetas_grises_borrosas/${palabraFinal}.png`;
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Oculto las imágenes
 
   imagenPokemonSilueta.style.display = "none";
-  // imagenPokemonSolucion.style.display = "none";
+  imagenPokemonSolucion.style.display = "none";
   imagenPokemonBorrosaColor.style.display = "none";
   imagenPokemonBorrosa.style.display = "none";
   imagenPokemonMuyBorrosa.style.display = "none";
@@ -135,29 +135,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Muestro una imagen a modo de pista según el número de intentos restantes
 
-    if (intentos === 5) {
-      imagenPokemonSilueta.style.display = "block";
-    }
-    if (intentos === 4) {
-      imagenPokemonSilueta.style.display = "none";
+    if (intentos === 5 && palabraFinal !== guess) {
       imagenPokemonMuyBorrosa.style.display = "block";
     }
-    if (intentos === 3) {
+    if (intentos === 4 && palabraFinal !== guess) {
       imagenPokemonMuyBorrosa.style.display = "none";
       imagenPokemonBorrosa.style.display = "block";
     }
-    if (intentos === 2) {
+    if (intentos === 3 && palabraFinal !== guess) {
       imagenPokemonBorrosa.style.display = "none";
       imagenPokemonBorrosaColor.style.display = "block";
     }
-    if (intentos === 1) {
+    if (intentos === 2 && palabraFinal !== guess) {
       imagenPokemonBorrosaColor.style.display = "none";
+      imagenPokemonSilueta.style.display = "block";
+    }
+    if (intentos === 1 && palabraFinal !== guess) {
+      imagenPokemonSilueta.style.display = "none";
       imagenPokemonSolucion.style.display = "block";
     }
     if (intentos >= 0 && palabraFinal === guess) {
 
       // Muestro el mensaje de victoria, oculto el botón de enviar y muestro el botón de volver a jugar para redirigir a la página "index.html"
-
+      imagen
+      imagenPokemonSolucion.style.display = "block";
       document.getElementById("mensaje-victoria").style.display = "block";
       const victoria = document.createElement("div");
       victoria.innerHTML = "¡Has ganado!";
