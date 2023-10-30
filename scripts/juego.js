@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (intentos >= 0 && palabraFinal === guess) {
 
       // Muestro el mensaje de victoria, oculto el botón de enviar y muestro el botón de volver a jugar para redirigir a la página "index.html"
-      imagen
+      imagenPokemonSilueta.style.display = "none";
       imagenPokemonSolucion.style.display = "block";
       document.getElementById("mensaje-victoria").style.display = "block";
       const victoria = document.createElement("div");
