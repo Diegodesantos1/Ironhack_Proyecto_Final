@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
   const letters = urlParams.get("letters");
 
-
   if (letters) {
     const matchingWords = palabras.filter((palabra) => palabra.length === parseInt(letters));
 
@@ -19,10 +18,27 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
   console.log(palabraFinal);
-  // Agrega el código para cargar la imagen del Pokémon al inicio del juego
-  const pokemonImage = document.getElementById("pokemon-image");
-  pokemonImage.src = `data/imagenes_pokemon/${palabraFinal}.png`;
-  pokemonImage.style.display = "none";  // Inicialmente, oculta la imagen
+
+  // Defino las variables de las imágenes
+  const imagenPokemonSolucion = document.getElementById("solucion");
+  const imagenPokemonSilueta = document.getElementById("silueta");
+  const imagenPokemonBorrosaColor = document.getElementById("borrosa-color");
+  const imagenPokemonBorrosa = document.getElementById("borrosa");
+  const imagenPokemonMuyBorrosa = document.getElementById("muy-borrosa");
+
+  // Defino las rutas de las imágenes
+  imagenPokemonSolucion.src = `data/pokemon/${palabraFinal}.png`;
+  imagenPokemonSilueta.src = `data/siluetas_pokemon/${palabraFinal}.png`;
+  imagenPokemonBorrosaColor.src = `data/siluetas_colores_borrosas/${palabraFinal}.png`;
+  imagenPokemonBorrosa.src = `data/siluetas_grises_borrosas/${palabraFinal}.png`;
+  imagenPokemonMuyBorrosa.src = `data/siluetas_grises_muy_borrosas/${palabraFinal}.png`;
+
+  // Oculto las imágenes
+  imagenPokemonSilueta.style.display = "none";
+  imagenPokemonSolucion.style.display = "none";
+  imagenPokemonBorrosaColor.style.display = "none";
+  imagenPokemonBorrosa.style.display = "none";
+  imagenPokemonMuyBorrosa.style.display = "none";
 
   document.getElementById("submit").addEventListener("click", () => {
     jugar();
@@ -74,6 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
+    
     const guessDiv = document.createElement("div");
     guessDiv.innerHTML = displayWord;
     document.getElementById("guess-history").appendChild(guessDiv);
@@ -83,17 +100,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
     intentos--;
     document.getElementById("attempts").textContent = intentos;
+    
+    if (intentos === 5) {
+      imagenPokemonSilueta.style.display = "block";
+    }
+    if (intentos === 4) {
+      imagenPokemonSilueta.style.display = "none";
+      imagenPokemonMuyBorrosa.style.display = "block";
+    }
+    if (intentos === 3) {
+      imagenPokemonMuyBorrosa.style.display = "none";
+      imagenPokemonBorrosa.style.display = "block";
+    }
+    if (intentos === 2) {
+      imagenPokemonBorrosa.style.display = "none";
+      imagenPokemonBorrosaColor.style.display = "block";
+    }
+    if (intentos === 1) {
+      imagenPokemonBorrosaColor.style.display = "none";
+      imagenPokemonSolucion.style.display = "block";
+    }
     if (intentos >= 0 && palabraFinal === guess) {
       //añade un mensaje de victoria
       document.getElementById("mensaje-victoria").style.display = "block";
       const victoria = document.createElement("div");
       victoria.innerHTML = "¡Has ganado!";
       //añade la imagen del pokemon
-      pokemonImage.style.display = "block";
+      imagenPokemonSolucion.style.display = "block";
       //añade el botón de volver a jugar
-      //ahora haz que no puedas seguir jugando
       document.getElementById("submit").style.display = "none";
-      pokemonImage.style.display = "block";
+      imagenPokemonSolucion.style.display = "block";
       // Haz que aparezca el botón de volver a jugar
       document.getElementById("volver-a-jugar").style.display = "block";
       const volverAJugarButton = document.getElementById('volver-a-jugar');
@@ -114,7 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
       solucionElement.innerHTML = palabraSolucion;
       //ahora haz que no puedas seguir jugando
       document.getElementById("submit").style.display = "none";
-      pokemonImage.style.display = "block";
+      imagenPokemonSolucion.style.display = "block";
       // Haz que aparezca el botón de volver a jugar
       document.getElementById("volver-a-jugar").style.display = "block";
       const volverAJugarButton = document.getElementById('volver-a-jugar');
