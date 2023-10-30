@@ -132,32 +132,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     intentos--;
     document.getElementById("attempts").textContent = intentos;
-
-    // Muestro una imagen a modo de pista según el número de intentos restantes
-
-    if (intentos === 5 && palabraFinal !== guess) {
-      imagenPokemonMuyBorrosa.style.display = "block";
-    }
-    if (intentos === 4 && palabraFinal !== guess) {
-      imagenPokemonMuyBorrosa.style.display = "none";
-      imagenPokemonBorrosa.style.display = "block";
-    }
-    if (intentos === 3 && palabraFinal !== guess) {
-      imagenPokemonBorrosa.style.display = "none";
-      imagenPokemonBorrosaColor.style.display = "block";
-    }
-    if (intentos === 2 && palabraFinal !== guess) {
-      imagenPokemonBorrosaColor.style.display = "none";
-      imagenPokemonSilueta.style.display = "block";
-    }
-    if (intentos === 1 && palabraFinal !== guess) {
-      imagenPokemonSilueta.style.display = "none";
-      imagenPokemonSolucion.style.display = "block";
-    }
     if (intentos >= 0 && palabraFinal === guess) {
 
       // Muestro el mensaje de victoria, oculto el botón de enviar y muestro el botón de volver a jugar para redirigir a la página "index.html"
+
+      intento_palabra.style.display = "none";
       imagenPokemonSilueta.style.display = "none";
+      imagenPokemonBorrosaColor.style.display = "none";
+      imagenPokemonBorrosa.style.display = "none";
+      imagenPokemonMuyBorrosa.style.display = "none";
       imagenPokemonSolucion.style.display = "block";
       document.getElementById("mensaje-victoria").style.display = "block";
       const victoria = document.createElement("div");
@@ -171,6 +154,28 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
+    // Muestro una imagen a modo de pista según el número de intentos restantes
+
+    else if (intentos === 5 && palabraFinal !== guess) {
+      imagenPokemonMuyBorrosa.style.display = "block";
+    }
+    else if (intentos === 4 && palabraFinal !== guess) {
+      imagenPokemonMuyBorrosa.style.display = "none";
+      imagenPokemonBorrosa.style.display = "block";
+    }
+    else if (intentos === 3 && palabraFinal !== guess) {
+      imagenPokemonBorrosa.style.display = "none";
+      imagenPokemonSilueta.style.display = "block";
+    }
+    else if (intentos === 2 && palabraFinal !== guess) {
+      imagenPokemonSilueta.style.display = "none";
+      imagenPokemonBorrosaColor.style.display = "block";
+    }
+    else if (intentos === 1 && palabraFinal !== guess) {
+      imagenPokemonBorrosaColor.style.display = "none";
+      imagenPokemonSolucion.style.display = "block";
+    }
+
     // si el jugador falla en el último intento, muestra la palabra de solución
 
     else if (intentos === 0 && palabraFinal !== guess) {
@@ -180,6 +185,7 @@ document.addEventListener("DOMContentLoaded", () => {
       var palabraSolucion = palabraFinal;
       solucionElement.innerHTML = palabraSolucion;
       document.getElementById("submit").style.display = "none";
+      intento_palabra.disabled = true;
       document.getElementById("volver-a-jugar").style.display = "block";
       const volverAJugarButton = document.getElementById('volver-a-jugar');
 
@@ -189,5 +195,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
-
-
