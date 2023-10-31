@@ -4,30 +4,42 @@
 <head>
   <meta charset="utf-8">
   <title>Pokédle</title>
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/juego.css">
   <link rel="stylesheet" href="styles/titulo.css">
+  <style>
+    @font-face {
+      font-family: 'Azonix';
+      src: url('fonts/azonix.otf') format('opentype');
+      /* Asegúrate de que la ruta coincida con la ubicación de la fuente. */
+      font-weight: normal;
+      font-style: normal;
+    }
+  </style>
 </head>
 
 <body>
   <h1 id="title">Pokedle</h1>
-  <div id="guess-history"></div>
   <div id="container">
+    <div id="guess-history"></div>
+    <div id="pokemons">
+      <img id="resultado" src="" alt="Solución" style="align-items: center;">
+      <img id="muy-borrosa" src="" alt="Silueta muy borrosa del Pokémon">
+      <img id="borrosa" src="" alt="Silueta borrosa del Pokémon">
+      <img id="borrosa-color" src="" alt="Silueta borrosa a color del Pokémon">
+      <img id="silueta" src="" alt="Silueta del Pokémon">
+    </div>
+  </div>
+  <div id="container2">
     <div id="guess-input">
       <input type="text" id="guess">
       <button id="submit">Enviar</button>
     </div>
-    <p>Intentos restantes: <span id="attempts">6</span></p>
     <div id="mensaje-victoria" style="display: none;">¡Enhorabuena, acertaste!</div>
+    <p id="attempts2">Intentos restantes: <span id="attempts">6</span></p>
     <p id="solucion"><span id="solucion"></span></p>
-    <button id="volver-a-jugar" style="display: none;">Volver a Jugar</button>
+    <button id="volver-a-jugar">Volver al menú</button>
   </div>
-  <div id = "pokemons">
-    <img id="resultado" src="" alt="Solución">
-    <img id="muy-borrosa" src="" alt="Silueta muy borrosa del Pokémon">
-    <img id="borrosa" src="" alt="Silueta borrosa del Pokémon">
-    <img id="borrosa-color" src="" alt="Silueta borrosa a color del Pokémon">
-    <img id="silueta" src="" alt="Silueta del Pokémon">
-  </div>
+
   <script type="module" src="scripts/inicio.js"></script>
   <script type="module" src="scripts/juego.js"></script>
 </body>

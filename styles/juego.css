@@ -1,0 +1,133 @@
+html {
+    background: #F0F0D8;
+    font-family: "Azonix", sans-serif;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1300px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+#guess-history{
+    width: 100%;
+    max-width: 450px;
+    margin: 0 10px;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+}
+
+#pokemons {
+    width: 100%;
+    max-width: 450px;
+    height: 240px;
+    margin: 0 10px;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+}
+
+img {
+    margin-left: 120px;
+}
+
+#container2 {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+}
+
+button {
+    font-family: "Azonix", sans-serif;
+    background: transparent;
+    padding: 15px;
+    transition: all .5s ease;
+    color: #41403E;
+    box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, .2);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+
+    &:hover {
+        background-color: #c6f09e;
+    }
+}
+
+input {
+    font-family: "Azonix", sans-serif;
+    background: transparent;
+    padding: 10px;
+    transition: all .5s ease;
+    color: #41403E;
+    box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, .2);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff6347;
+}
+
+/* Estilos para las letras adivinadas */
+.green,
+.yellow,
+.red {
+    font-size: 24px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.green {
+    color: green;
+}
+
+.yellow {
+    color: orange
+}
+
+.red {
+    color: red;
+}
+
+/* Media query para hacer más responsive */
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column;
+        /* Cambiar a una disposición vertical en pantallas más pequeñas */
+    }
+
+    #guess-history,
+    #pokemons {
+        width: 100%;
+        /* Ocupar el 100% del ancho en pantallas más pequeñas */
+        margin: 0;
+    }
+
+    #container2 {
+        width: 100%;
+        /* Ocupar el 100% del ancho en pantallas más pequeñas */
+        margin: 0;
+    }
+
+    button,
+    input {
+        width: 100%;
+        /* Ocupar el 100% del ancho en pantallas más pequeñas */
+    }
+}

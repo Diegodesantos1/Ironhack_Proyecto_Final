@@ -146,12 +146,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const victoria = document.createElement("div");
       victoria.innerHTML = "¡Has ganado!";
       document.getElementById("submit").style.display = "none";
-      document.getElementById("volver-a-jugar").style.display = "block";
-      const volverAJugarButton = document.getElementById('volver-a-jugar');
-
-      volverAJugarButton.addEventListener('click', () => {
-        window.location.href = 'index.html';
-      });
+      document.getElementById("attempts").style.display = "none";
+      document.getElementById("attempts2").style.display = "none";
     }
 
     // Muestro una imagen a modo de pista según el número de intentos restantes
@@ -186,12 +182,12 @@ document.addEventListener("DOMContentLoaded", () => {
       solucionElement.innerHTML = palabraSolucion;
       document.getElementById("submit").style.display = "none";
       intento_palabra.disabled = true;
-      document.getElementById("volver-a-jugar").style.display = "block";
-      const volverAJugarButton = document.getElementById('volver-a-jugar');
-
-      volverAJugarButton.addEventListener('click', () => {
-        window.location.href = 'index.html';
-      });
     }
   }
+});
+
+const volverAJugarButton = document.getElementById('volver-a-jugar');
+
+volverAJugarButton.addEventListener('click', () => {
+  window.location.href = 'index.html';
 });
