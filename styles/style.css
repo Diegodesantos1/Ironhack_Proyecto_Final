@@ -8,10 +8,9 @@
   top: 100px;
 }
 
-
 body {
   font-family: 'Azonix';
-  background:#F0F0D8;
+  background: #F0F0D8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +70,9 @@ button:hover {
 }
 
 /* Estilos para las letras adivinadas */
-.green, .yellow, .red {
+.green,
+.yellow,
+.red {
   font-size: 24px;
   border: 2px solid rgb(0, 0, 0);
   padding: 5px;
@@ -93,7 +94,7 @@ button:hover {
   color: red;
 }
 
-#guess-history {  
+#guess-history {
   font-size: 20px;
   text-align: left;
   position: absolute;
@@ -103,11 +104,15 @@ button:hover {
 /* Media queries para hacerlo responsive */
 @media (max-width: 768px) {
   body {
-    height: 200vh; /* Ajusta la altura para pantallas más pequeñas */
+    height: 200vh;
+    /* Ajusta la altura para pantallas más pequeñas */
   }
 
-  .green, .yellow, .red {
-    font-size: 18px; /* Disminuye el tamaño de fuente en pantallas pequeñas */
+  .green,
+  .yellow,
+  .red {
+    font-size: 18px;
+    /* Disminuye el tamaño de fuente en pantallas pequeñas */
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -118,7 +123,7 @@ button:hover {
 }
 
 #menu_inicial {
-  display:grid;
+  display: grid;
   width: 200px;
   height: 150px;
   padding: 20px;
@@ -133,7 +138,7 @@ button:hover {
   font-weight: bold;
 }
 
-#pokemons{
+#pokemons {
   position: absolute;
   width: 200px;
   height: 150px;

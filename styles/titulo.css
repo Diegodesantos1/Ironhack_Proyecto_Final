@@ -5,8 +5,8 @@ h1 {
   font: normal 140px Varela Round, sans-serif;
   text-transform: uppercase;
   animation: move linear 2000ms infinite;
-  margin:0;
-  text-align:center;
+  margin: 0;
+  text-align: center;
 }
 
 @keyframes move {
