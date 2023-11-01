@@ -191,3 +191,53 @@ const volverAJugarButton = document.getElementById('volver-a-jugar');
 volverAJugarButton.addEventListener('click', () => {
   window.location.href = 'index.html';
 });
+
+
+const requestURL = 'https://diegodesantos1.github.io/Ironhack_Proyecto_Final/data/pokemon.json';
+const request = new XMLHttpRequest();
+request.open("GET", requestURL);
+request.responseType = "json";
+request.send();
+
+request.onload = function () {
+  const pokemon = request.response;
+
+  // Buscar el Pokémon que coincida con la palabra clave
+  let pokemonEncontrado = null;
+
+  const palabraFinalMinusculas = palabraFinal.toLowerCase();
+
+  for (let i = 0; i < pokemon.length; i++) {
+    if (pokemon[i].name.toLowerCase() === palabraFinalMinusculas) {
+      pokemonEncontrado = pokemon[i];
+      break; // Termina la búsqueda una vez que se encuentre el Pokémon
+    }
+  }
+
+  if (pokemonEncontrado) {
+    // Accede a las propiedades del Pokémon encontrado
+    const pokemonNombre = pokemonEncontrado.name;
+    const pokemonNumero = pokemonEncontrado.id;
+    const pokemonAltura = pokemonEncontrado.height;
+    const pokemonPeso = pokemonEncontrado.weight;
+    const pokemonTipo = pokemonEncontrado.type;
+    const pokemonDebilidades = pokemonEncontrado.weaknesses;
+    const pokemonEvoluciones = pokemonEncontrado.evolution;
+    const pokemonEvolucion1 = pokemonEvoluciones[0];
+    const pokemonEvolucion2 = pokemonEvoluciones[1];
+    const pokemonEvolucion3 = pokemonEvoluciones[2];
+
+    // Muestra los valores del Pokémon en la página dentro del div "pokemon-data"
+    const pokemonData = document.getElementById("pokemon-data");
+    pokemonData.innerHTML = `<div class="pokemon-data">
+      <h2>${pokemonNombre}</h2>
+      <p>Número: ${pokemonNumero}</p>
+      <p>Altura: ${pokemonAltura}</p>
+      <p>Peso: ${pokemonPeso}</p>
+      <p>Tipo: ${pokemonTipo}</p>
+    </div>`;
+  } else {
+    // Manejar el caso en el que no se encuentre el Pokémon
+    console.log(`No se encontró ningún Pokémon con la palabra clave: ${palabraFinal}`);
+  }
+};
