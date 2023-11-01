@@ -192,17 +192,22 @@ volverAJugarButton.addEventListener('click', () => {
   window.location.href = 'index.html';
 });
 
-
+// Me conecto al archivo JSON para obtener los datos de los Pokémon
 const requestURL = 'https://diegodesantos1.github.io/Ironhack_Proyecto_Final/data/pokemon.json';
+
+// creo una solicitud para obtener los datos del archivo JSON
+
 const request = new XMLHttpRequest();
 request.open("GET", requestURL);
 request.responseType = "json";
 request.send();
 
+// Cuando la solicitud se complete, ejecuto la función
+
 request.onload = function () {
   const pokemon = request.response;
 
-  // Buscar el Pokémon que coincida con la palabra clave
+  // Busco el Pokémon que coincida con la palabra clave
   let pokemonEncontrado = null;
 
   const palabraFinalMinusculas = palabraFinal.toLowerCase();
@@ -221,20 +226,16 @@ request.onload = function () {
     const pokemonAltura = pokemonEncontrado.height;
     const pokemonPeso = pokemonEncontrado.weight;
     const pokemonTipo = pokemonEncontrado.type;
-    const pokemonDebilidades = pokemonEncontrado.weaknesses;
     const pokemonEvoluciones = pokemonEncontrado.evolution;
-    const pokemonEvolucion1 = pokemonEvoluciones[0];
-    const pokemonEvolucion2 = pokemonEvoluciones[1];
-    const pokemonEvolucion3 = pokemonEvoluciones[2];
 
     // Muestra los valores del Pokémon en la página dentro del div "pokemon-data"
     const pokemonData = document.getElementById("pokemon-data");
     pokemonData.innerHTML = `<div class="pokemon-data">
-      <h2>${pokemonNombre}</h2>
       <p>Número: ${pokemonNumero}</p>
       <p>Altura: ${pokemonAltura}</p>
       <p>Peso: ${pokemonPeso}</p>
       <p>Tipo: ${pokemonTipo}</p>
+      <p>Evoluciones: ${pokemonEvoluciones}</p>
     </div>`;
   } else {
     // Manejar el caso en el que no se encuentre el Pokémon

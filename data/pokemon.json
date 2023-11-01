@@ -188,7 +188,7 @@
     "name": "Squirtle",
     "species": "Tiny Turtle Pokemon",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.51m",
     "weight": "9.0 kg",
@@ -218,7 +218,7 @@
     "name": "Wartortle",
     "species": "Turtle Pokemon",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.99m",
     "weight": "22.5 kg",
@@ -248,7 +248,7 @@
     "name": "Blastoise",
     "species": "Shellfish Pokemon",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "1.60m",
     "weight": "85.5 kg",
@@ -1621,7 +1621,7 @@
     "name": "Psyduck",
     "species": "Duck Pokemon",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.79m",
     "weight": "19.6 kg",
@@ -1651,7 +1651,7 @@
     "name": "Golduck",
     "species": "Duck Pokemon",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "1.70m",
     "weight": "76.6 kg",
@@ -1801,7 +1801,7 @@
     "name": "Poliwag",
     "species": "Tadpole Pokemon",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.61m",
     "weight": "12.4 kg",
@@ -1832,7 +1832,7 @@
     "name": "Poliwhirl",
     "species": "Tadpole Pokemon",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.99m",
     "weight": "20.0 kg",
@@ -1863,7 +1863,7 @@
     "name": "Poliwrath",
     "species": "Tadpole Pokemon",
     "type": [
-      "Water",
+      "Agua",
       "Lucha"
     ],
     "height": "1.30m",
@@ -2174,7 +2174,7 @@
     "name": "Tentacool",
     "species": "Jellyfish Pokemon",
     "type": [
-      "Water",
+      "Agua",
       "Veneno"
     ],
     "height": "0.89m",
@@ -2205,7 +2205,7 @@
     "name": "Tentacruel",
     "species": "Jellyfish Pokemon",
     "type": [
-      "Water",
+      "Agua",
       "Veneno"
     ],
     "height": "1.60m",
@@ -2392,7 +2392,7 @@
     "name": "Slowpoke",
     "species": "Dopey Pokemon",
     "type": [
-      "Water",
+      "Agua",
       "Psíquico"
     ],
     "height": "1.19m",
@@ -2423,7 +2423,7 @@
     "name": "Slowbro",
     "species": "Hermit Crab Pokemon",
     "type": [
-      "Water",
+      "Agua",
       "Psíquico"
     ],
     "height": "1.60m",
@@ -2606,7 +2606,7 @@
     "name": "Seel",
     "species": "Sea Lion Pokemon",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "1.09m",
     "weight": "90.0 kg",
@@ -2636,7 +2636,7 @@
     "name": "Dewgong",
     "species": "Sea Lion Pokemon",
     "type": [
-      "Water",
+      "Agua",
       "Hielo"
     ],
     "height": "1.70m",
@@ -2727,7 +2727,7 @@
     "name": "Shellder",
     "species": "Bivalve Pokemon",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.30m",
     "weight": "4.0 kg",
@@ -2757,7 +2757,7 @@
     "name": "Cloyster",
     "species": "Bivalve Pokemon",
     "type": [
-      "Water",
+      "Agua",
       "Hielo"
     ],
     "height": "1.50m",
@@ -2968,7 +2968,7 @@
     "name": "Krabby",
     "species": "River Crab Pokemon",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.41m",
     "weight": "6.5 kg",
@@ -2998,7 +2998,7 @@
     "name": "Kingler",
     "species": "Pincer Pokemon",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "1.30m",
     "weight": "60.0 kg",
@@ -3500,7 +3500,7 @@
     "name": "Horsea",
     "species": "Dragon Pokemon",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.41m",
     "weight": "8.0 kg",
@@ -3530,7 +3530,7 @@
     "name": "Seadra",
     "species": "Dragon Pokemon",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "1.19m",
     "weight": "25.0 kg",
@@ -3560,7 +3560,7 @@
     "name": "Goldeen",
     "species": "Goldfish Pokemon",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.61m",
     "weight": "15.0 kg",
@@ -3590,7 +3590,7 @@
     "name": "Seaking",
     "species": "Goldfish Pokemon",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "1.30m",
     "weight": "39.0 kg",
@@ -3620,7 +3620,7 @@
     "name": "Staryu",
     "species": "Star Shape Pokemon",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.79m",
     "weight": "34.5 kg",
@@ -3650,7 +3650,7 @@
     "name": "Starmie",
     "species": "Mysterious Pokemon",
     "type": [
-      "Water",
+      "Agua",
       "Psíquico"
     ],
     "height": "1.09m",
@@ -3881,7 +3881,7 @@
     "name": "Magikarp",
     "species": "Fish Pokemon",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.89m",
     "weight": "10.0 kg",
@@ -3910,7 +3910,7 @@
     "name": "Gyarados",
     "species": "Atrocious Pokemon",
     "type": [
-      "Water",
+      "Agua",
       "Volador"
     ],
     "height": "6.50m",
@@ -3940,7 +3940,7 @@
     "name": "Lapras",
     "species": "Transport Pokemon",
     "type": [
-      "Water",
+      "Agua",
       "Hielo"
     ],
     "height": "2.49m",
@@ -4026,7 +4026,7 @@
     "name": "Vaporeon",
     "species": "Bubble Jet Pokemon",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.99m",
     "weight": "29.0 kg",
@@ -4149,7 +4149,7 @@
     "species": "Spiral Pokemon",
     "type": [
       "Roca",
-      "Water"
+      "Agua"
     ],
     "height": "0.41m",
     "weight": "7.5 kg",
@@ -4180,7 +4180,7 @@
     "species": "Spiral Pokemon",
     "type": [
       "Roca",
-      "Water"
+      "Agua"
     ],
     "height": "0.99m",
     "weight": "35.0 kg",
@@ -4211,7 +4211,7 @@
     "species": "Shellfish Pokemon",
     "type": [
       "Roca",
-      "Water"
+      "Agua"
     ],
     "height": "0.51m",
     "weight": "11.5 kg",
@@ -4242,7 +4242,7 @@
     "species": "Shellfish Pokemon",
     "type": [
       "Roca",
-      "Water"
+      "Agua"
     ],
     "height": "1.30m",
     "weight": "40.5 kg",
@@ -4708,7 +4708,7 @@
     "species": "Big Jaw Pokemon",
     "id": "158",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.6m",
     "weight": "9.5 kg",
@@ -4734,7 +4734,7 @@
     "species": "Big Jaw Pokemon",
     "id": "159",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "1.1m",
     "weight": "25 kg",
@@ -4760,7 +4760,7 @@
     "species": "Big Jaw Pokemon",
     "id": "160",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "2.3m",
     "weight": "88.8 kg",
@@ -5035,7 +5035,7 @@
     "species": "Angler Pokemon",
     "id": "170",
     "type": [
-      "Water",
+      "Agua",
       "Eléctrico"
     ],
     "height": "0.5m",
@@ -5063,7 +5063,7 @@
     "species": "Light Pokemon",
     "id": "171",
     "type": [
-      "Water",
+      "Agua",
       "Eléctrico"
     ],
     "height": "1.2m",
@@ -5387,7 +5387,7 @@
     "species": "Aquamouse Pokemon",
     "id": "183",
     "type": [
-      "Water",
+      "Agua",
       "Hada"
     ],
     "height": "0.4m",
@@ -5415,7 +5415,7 @@
     "species": "Aquarabbit Pokemon",
     "id": "184",
     "type": [
-      "Water",
+      "Agua",
       "Hada"
     ],
     "height": "0.8m",
@@ -5470,7 +5470,7 @@
     "species": "Frog Pokemon",
     "id": "186",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "1.1m",
     "weight": "33.9 kg",
@@ -5690,7 +5690,7 @@
     "species": "Water Fish Pokemon",
     "id": "194",
     "type": [
-      "Water",
+      "Agua",
       "Tierra"
     ],
     "height": "0.4m",
@@ -5718,7 +5718,7 @@
     "species": "Water Fish Pokemon",
     "id": "195",
     "type": [
-      "Water",
+      "Agua",
       "Tierra"
     ],
     "height": "1.4m",
@@ -5826,7 +5826,7 @@
     "species": "Royal Pokemon",
     "id": "199",
     "type": [
-      "Water",
+      "Agua",
       "Psíquico"
     ],
     "height": "2m",
@@ -6148,7 +6148,7 @@
     "species": "Balloon Pokemon",
     "id": "211",
     "type": [
-      "Water",
+      "Agua",
       "Veneno"
     ],
     "height": "0.5m",
@@ -6453,7 +6453,7 @@
     "species": "Coral Pokemon",
     "id": "222",
     "type": [
-      "Water",
+      "Agua",
       "Roca"
     ],
     "height": "0.6m",
@@ -6481,7 +6481,7 @@
     "species": "Jet Pokemon",
     "id": "223",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.6m",
     "weight": "12 kg",
@@ -6508,7 +6508,7 @@
     "species": "Jet Pokemon",
     "id": "224",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.9m",
     "weight": "28.5 kg",
@@ -6563,7 +6563,7 @@
     "species": "Kite Pokemon",
     "id": "226",
     "type": [
-      "Water",
+      "Agua",
       "Volador"
     ],
     "height": "2.1m",
@@ -6675,7 +6675,7 @@
     "species": "Dragon Pokemon",
     "id": "230",
     "type": [
-      "Water",
+      "Agua",
       "Dragón"
     ],
     "height": "1.8m",
@@ -7076,7 +7076,7 @@
     "species": "Aurora Pokemon",
     "id": "245",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "2m",
     "weight": "187 kg",
@@ -7420,7 +7420,7 @@
     "species": "Mud Fish Pokemon",
     "id": "258",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.4m",
     "weight": "7.6 kg",
@@ -7446,7 +7446,7 @@
     "species": "Mud Fish Pokemon",
     "id": "259",
     "type": [
-      "Water",
+      "Agua",
       "Tierra"
     ],
     "height": "0.7m",
@@ -7473,7 +7473,7 @@
     "species": "Mud Fish Pokemon",
     "id": "260",
     "type": [
-      "Water",
+      "Agua",
       "Tierra"
     ],
     "height": "1.5m",
@@ -7738,7 +7738,7 @@
     "species": "Water Weed Pokemon",
     "id": "270",
     "type": [
-      "Water",
+      "Agua",
       "Planta"
     ],
     "height": "0.5m",
@@ -7766,7 +7766,7 @@
     "species": "Jolly Pokemon",
     "id": "271",
     "type": [
-      "Water",
+      "Agua",
       "Planta"
     ],
     "height": "1.2m",
@@ -7794,7 +7794,7 @@
     "species": "Carefree Pokemon",
     "id": "272",
     "type": [
-      "Water",
+      "Agua",
       "Planta"
     ],
     "height": "1.5m",
@@ -7959,7 +7959,7 @@
     "species": "Seagull Pokemon",
     "id": "278",
     "type": [
-      "Water",
+      "Agua",
       "Volador"
     ],
     "height": "0.6m",
@@ -7987,7 +7987,7 @@
     "species": "Water Bird Pokemon",
     "id": "279",
     "type": [
-      "Water",
+      "Agua",
       "Volador"
     ],
     "height": "1.2m",
@@ -8100,7 +8100,7 @@
     "id": "283",
     "type": [
       "Bicho",
-      "Water"
+      "Agua"
     ],
     "height": "0.5m",
     "weight": "1.7 kg",
@@ -9040,7 +9040,7 @@
     "species": "Savage Pokemon",
     "id": "318",
     "type": [
-      "Water",
+      "Agua",
       "Siniestro"
     ],
     "height": "0.8m",
@@ -9067,7 +9067,7 @@
     "species": "Brutal Pokemon",
     "id": "319",
     "type": [
-      "Water",
+      "Agua",
       "Siniestro"
     ],
     "height": "1.8m",
@@ -9094,7 +9094,7 @@
     "species": "Ball Whale Pokemon",
     "id": "320",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "2m",
     "weight": "130 kg",
@@ -9121,7 +9121,7 @@
     "species": "Float Whale Pokemon",
     "id": "321",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "14.5m",
     "weight": "398 kg",
@@ -9602,7 +9602,7 @@
     "species": "Whiskers Pokemon",
     "id": "339",
     "type": [
-      "Water",
+      "Agua",
       "Tierra"
     ],
     "height": "0.4m",
@@ -9630,7 +9630,7 @@
     "species": "Whiskers Pokemon",
     "id": "340",
     "type": [
-      "Water",
+      "Agua",
       "Tierra"
     ],
     "height": "0.9m",
@@ -9658,7 +9658,7 @@
     "species": "Ruffian Pokemon",
     "id": "341",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.6m",
     "weight": "11.5 kg",
@@ -9685,7 +9685,7 @@
     "species": "Rogue Pokemon",
     "id": "342",
     "type": [
-      "Water",
+      "Agua",
       "Siniestro"
     ],
     "height": "1.1m",
@@ -9873,7 +9873,7 @@
     "species": "Fish Pokemon",
     "id": "349",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.6m",
     "weight": "7.4 kg",
@@ -9900,7 +9900,7 @@
     "species": "Tender Pokemon",
     "id": "350",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "6.2m",
     "weight": "162 kg",
@@ -10245,7 +10245,7 @@
     "id": "363",
     "type": [
       "Hielo",
-      "Water"
+      "Agua"
     ],
     "height": "0.8m",
     "weight": "39.5 kg",
@@ -10273,7 +10273,7 @@
     "id": "364",
     "type": [
       "Hielo",
-      "Water"
+      "Agua"
     ],
     "height": "1.1m",
     "weight": "87.6 kg",
@@ -10301,7 +10301,7 @@
     "id": "365",
     "type": [
       "Hielo",
-      "Water"
+      "Agua"
     ],
     "height": "1.4m",
     "weight": "150.6 kg",
@@ -10328,7 +10328,7 @@
     "species": "Bivalve Pokemon",
     "id": "366",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.4m",
     "weight": "52.5 kg",
@@ -10354,7 +10354,7 @@
     "species": "Deep Sea Pokemon",
     "id": "367",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "1.7m",
     "weight": "27 kg",
@@ -10380,7 +10380,7 @@
     "species": "South Sea Pokemon",
     "id": "368",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "1.8m",
     "weight": "22.6 kg",
@@ -10406,7 +10406,7 @@
     "species": "Longevity Pokemon",
     "id": "369",
     "type": [
-      "Water",
+      "Agua",
       "Roca"
     ],
     "height": "1m",
@@ -10434,7 +10434,7 @@
     "species": "Rendezvous Pokemon",
     "id": "370",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.6m",
     "weight": "8.7 kg",
@@ -10750,7 +10750,7 @@
     "species": "Sea Basin Pokemon",
     "id": "382",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "4.5m",
     "weight": "352 kg",
@@ -11036,7 +11036,7 @@
     "species": "Penguin Pokemon",
     "id": "393",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.4m",
     "weight": "5.2 kg",
@@ -11062,7 +11062,7 @@
     "species": "Penguin Pokemon",
     "id": "394",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.8m",
     "weight": "23 kg",
@@ -11088,7 +11088,7 @@
     "species": "Emperor Pokemon",
     "id": "395",
     "type": [
-      "Water",
+      "Agua",
       "Acero"
     ],
     "height": "1.7m",
@@ -11224,7 +11224,7 @@
     "id": "400",
     "type": [
       "Normal",
-      "Water"
+      "Agua"
     ],
     "height": "1m",
     "weight": "31.5 kg",
@@ -11707,7 +11707,7 @@
     "species": "Sea Weasel Pokemon",
     "id": "418",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.7m",
     "weight": "29.5 kg",
@@ -11733,7 +11733,7 @@
     "species": "Sea Weasel Pokemon",
     "id": "419",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "1.1m",
     "weight": "33.5 kg",
@@ -11809,7 +11809,7 @@
     "species": "Sea Slug Pokemon",
     "id": "422",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.3m",
     "weight": "6.3 kg",
@@ -11836,7 +11836,7 @@
     "species": "Sea Slug Pokemon",
     "id": "423",
     "type": [
-      "Water",
+      "Agua",
       "Tierra"
     ],
     "height": "0.9m",
@@ -12734,7 +12734,7 @@
     "species": "Wing Fish Pokemon",
     "id": "456",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.4m",
     "weight": "7 kg",
@@ -12761,7 +12761,7 @@
     "species": "Neon Pokemon",
     "id": "457",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "1.2m",
     "weight": "24 kg",
@@ -12788,7 +12788,7 @@
     "species": "Kite Pokemon",
     "id": "458",
     "type": [
-      "Water",
+      "Agua",
       "Volador"
     ],
     "height": "1m",
@@ -13486,7 +13486,7 @@
     "species": "Spatial Pokemon",
     "id": "484",
     "type": [
-      "Water",
+      "Agua",
       "Dragón"
     ],
     "height": "4.2m",
@@ -13618,7 +13618,7 @@
     "species": "Sea Drifter Pokemon",
     "id": "489",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.4m",
     "weight": "3.1 kg",
@@ -13643,7 +13643,7 @@
     "species": "Seafaring Pokemon",
     "id": "490",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.3m",
     "weight": "1.4 kg",
@@ -13929,7 +13929,7 @@
     "species": "Sea Otter Pokemon",
     "id": "501",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.5m",
     "weight": "5.9 kg",
@@ -13955,7 +13955,7 @@
     "species": "Discipline Pokemon",
     "id": "502",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.8m",
     "weight": "24.5 kg",
@@ -13981,7 +13981,7 @@
     "species": "Formidable Pokemon",
     "id": "503",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "1.5m",
     "weight": "94.6 kg",
@@ -14300,7 +14300,7 @@
     "species": "Spray Pokemon",
     "id": "515",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.6m",
     "weight": "13.5 kg",
@@ -14326,7 +14326,7 @@
     "species": "Geyser Pokemon",
     "id": "516",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "1m",
     "weight": "29 kg",
@@ -14844,7 +14844,7 @@
     "species": "Tadpole Pokemon",
     "id": "535",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.5m",
     "weight": "4.5 kg",
@@ -14871,7 +14871,7 @@
     "species": "Vibration Pokemon",
     "id": "536",
     "type": [
-      "Water",
+      "Agua",
       "Tierra"
     ],
     "height": "0.8m",
@@ -14899,7 +14899,7 @@
     "species": "Vibration Pokemon",
     "id": "537",
     "type": [
-      "Water",
+      "Agua",
       "Tierra"
     ],
     "height": "1.5m",
@@ -15259,7 +15259,7 @@
     "species": "Hostile Pokemon",
     "id": "550",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "1m",
     "weight": "18 kg",
@@ -15641,7 +15641,7 @@
     "species": "Prototurtle Pokemon",
     "id": "564",
     "type": [
-      "Water",
+      "Agua",
       "Roca"
     ],
     "height": "0.7m",
@@ -15669,7 +15669,7 @@
     "species": "Prototurtle Pokemon",
     "id": "565",
     "type": [
-      "Water",
+      "Agua",
       "Roca"
     ],
     "height": "1.2m",
@@ -16069,7 +16069,7 @@
     "species": "Water Bird Pokemon",
     "id": "580",
     "type": [
-      "Water",
+      "Agua",
       "Volador"
     ],
     "height": "0.5m",
@@ -16097,7 +16097,7 @@
     "species": "White Bird Pokemon",
     "id": "581",
     "type": [
-      "Water",
+      "Agua",
       "Volador"
     ],
     "height": "1.3m",
@@ -16398,7 +16398,7 @@
     "species": "Floating Pokemon",
     "id": "592",
     "type": [
-      "Water",
+      "Agua",
       "Fantasma"
     ],
     "height": "1.2m",
@@ -16426,7 +16426,7 @@
     "species": "Floating Pokemon",
     "id": "593",
     "type": [
-      "Water",
+      "Agua",
       "Fantasma"
     ],
     "height": "2.2m",
@@ -16454,7 +16454,7 @@
     "species": "Caring Pokemon",
     "id": "594",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "1.2m",
     "weight": "31.6 kg",
@@ -17886,7 +17886,7 @@
     "species": "Colt Pokemon",
     "id": "647",
     "type": [
-      "Water",
+      "Agua",
       "Lucha"
     ],
     "height": "1.4m",
@@ -18122,7 +18122,7 @@
     "species": "Bubble Frog Pokemon",
     "id": "656",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.3m",
     "weight": "7 kg",
@@ -18148,7 +18148,7 @@
     "species": "Bubble Frog Pokemon",
     "id": "657",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.6m",
     "weight": "10.9 kg",
@@ -18174,7 +18174,7 @@
     "species": "Ninja Pokemon",
     "id": "658",
     "type": [
-      "Water",
+      "Agua",
       "Siniestro"
     ],
     "height": "1.5m",
@@ -18979,7 +18979,7 @@
     "id": "688",
     "type": [
       "Roca",
-      "Water"
+      "Agua"
     ],
     "height": "0.5m",
     "weight": "31 kg",
@@ -19007,7 +19007,7 @@
     "id": "689",
     "type": [
       "Roca",
-      "Water"
+      "Agua"
     ],
     "height": "1.3m",
     "weight": "96 kg",
@@ -19035,7 +19035,7 @@
     "id": "690",
     "type": [
       "Veneno",
-      "Water"
+      "Agua"
     ],
     "height": "0.5m",
     "weight": "7.3 kg",
@@ -19090,7 +19090,7 @@
     "species": "Water Gun Pokemon",
     "id": "692",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.5m",
     "weight": "8.3 kg",
@@ -19115,7 +19115,7 @@
     "species": "Howitzer Pokemon",
     "id": "693",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "1.3m",
     "weight": "35.3 kg",
@@ -19874,7 +19874,7 @@
     "id": "721",
     "type": [
       "Fuego",
-      "Water"
+      "Agua"
     ],
     "height": "1.7m",
     "weight": "195 kg",
@@ -20059,7 +20059,7 @@
     "species": "Sea Lion Pokemon",
     "id": "728",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.4m",
     "weight": "7.5 kg",
@@ -20085,7 +20085,7 @@
     "species": "Pop Star Pokemon",
     "id": "729",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.6m",
     "weight": "17.5 kg",
@@ -20111,7 +20111,7 @@
     "species": "Soloist Pokemon",
     "id": "730",
     "type": [
-      "Water",
+      "Agua",
       "Hada"
     ],
     "height": "1.8m",
@@ -20547,7 +20547,7 @@
     "species": "Small Fry Pokemon",
     "id": "746",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.2m",
     "weight": "0.3 kg",
@@ -20573,7 +20573,7 @@
     "id": "747",
     "type": [
       "Veneno",
-      "Water"
+      "Agua"
     ],
     "height": "0.4m",
     "weight": "8 kg",
@@ -20601,7 +20601,7 @@
     "id": "748",
     "type": [
       "Veneno",
-      "Water"
+      "Agua"
     ],
     "height": "0.7m",
     "weight": "14.5 kg",
@@ -20682,7 +20682,7 @@
     "species": "Water Bubble Pokemon",
     "id": "751",
     "type": [
-      "Water",
+      "Agua",
       "Bicho"
     ],
     "height": "0.3m",
@@ -20709,7 +20709,7 @@
     "species": "Water Bubble Pokemon",
     "id": "752",
     "type": [
-      "Water",
+      "Agua",
       "Bicho"
     ],
     "height": "1.8m",
@@ -21117,7 +21117,7 @@
     "id": "767",
     "type": [
       "Bicho",
-      "Water"
+      "Agua"
     ],
     "height": "0.5m",
     "weight": "12 kg",
@@ -21143,7 +21143,7 @@
     "id": "768",
     "type": [
       "Bicho",
-      "Water"
+      "Agua"
     ],
     "height": "2m",
     "weight": "108 kg",
@@ -21222,7 +21222,7 @@
     "species": "Sea Cucumber Pokemon",
     "id": "771",
     "type": [
-      "Water"
+      "Agua"
     ],
     "height": "0.3m",
     "weight": "1.2 kg",
@@ -21429,7 +21429,7 @@
     "species": "Gnash Teeth Pokemon",
     "id": "779",
     "type": [
-      "Water",
+      "Agua",
       "Psíquico"
     ],
     "height": "0.9m",
@@ -21675,7 +21675,7 @@
     "species": "Land Spirit Pokemon",
     "id": "788",
     "type": [
-      "Water",
+      "Agua",
       "Hada"
     ],
     "height": "1.3m",
