@@ -27,19 +27,19 @@
       <img id="borrosa-color" src="" alt="Silueta borrosa a color del Pokémon">
       <img id="silueta" src="" alt="Silueta del Pokémon">
     </div>
-  </div>
-  <div id="container2">
-    <div id="guess-input">
-      <input type="text" id="guess">
-      <button id="submit">Enviar</button>
+    <div id="respuesta">
+      <div id="guess-input">
+        <input type="text" id="guess">
+        <button id="submit">Enviar</button>
+      </div>
+      <div id="mensaje-victoria" style="display: none;">¡Enhorabuena, acertaste!</div>
+      <p id="attempts2">Intentos restantes: <span id="attempts">6</span></p>
+      <p id="solucion"><span id="solucion"></span></p>
+      <button id="volver-a-jugar">Volver al menú</button>
     </div>
-    <div id="mensaje-victoria" style="display: none;">¡Enhorabuena, acertaste!</div>
-    <p id="attempts2">Intentos restantes: <span id="attempts">6</span></p>
-    <p id="solucion"><span id="solucion"></span></p>
-    <button id="volver-a-jugar">Volver al menú</button>
-  </div>
-  <div id="pokemon-data">
-    <!-- Aquí se mostrarán los datos del Pokémon -->
+    <div id="pokemon-data">
+      <!-- Aquí se mostrarán los datos del Pokémon -->
+    </div>
   </div>
   <script type="module" src="scripts/inicio.js"></script>
   <script type="module" src="scripts/juego.js"></script>

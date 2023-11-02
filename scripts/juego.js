@@ -219,26 +219,21 @@ request.onload = function () {
     }
   }
 
-  if (pokemonEncontrado) {
-    // Accede a las propiedades del Pokémon encontrado
-    const pokemonNombre = pokemonEncontrado.name;
-    const pokemonNumero = pokemonEncontrado.id;
-    const pokemonAltura = pokemonEncontrado.height;
-    const pokemonPeso = pokemonEncontrado.weight;
-    const pokemonTipo = pokemonEncontrado.type;
-    const pokemonEvoluciones = pokemonEncontrado.evolution;
+  
+  // Accedo a las propiedades del Pokémon encontrado
+  const pokemonGeneracion = pokemonEncontrado.gen;
+  const pokemonAltura = pokemonEncontrado.height;
+  const pokemonPeso = pokemonEncontrado.weight;
+  const pokemonTipo = pokemonEncontrado.type;
+  const pokemonEvoluciones = pokemonEncontrado.evolution;
 
-    // Muestra los valores del Pokémon en la página dentro del div "pokemon-data"
-    const pokemonData = document.getElementById("pokemon-data");
-    pokemonData.innerHTML = `<div class="pokemon-data">
-      <p>Número: ${pokemonNumero}</p>
-      <p>Altura: ${pokemonAltura}</p>
-      <p>Peso: ${pokemonPeso}</p>
-      <p>Tipo: ${pokemonTipo}</p>
-      <p>Evoluciones: ${pokemonEvoluciones}</p>
-    </div>`;
-  } else {
-    // Manejar el caso en el que no se encuentre el Pokémon
-    console.log(`No se encontró ningún Pokémon con la palabra clave: ${palabraFinal}`);
-  }
+  // Muestra los valores del Pokémon en la página dentro del div "pokemon-data"
+  const pokemonData = document.getElementById("pokemon-data");
+  pokemonData.innerHTML = `<div class="pokemon-data">
+    <p>Generación: ${pokemonGeneracion}</p>
+    <p>Altura: ${pokemonAltura}</p>
+    <p>Peso: ${pokemonPeso}</p>
+    <p>Tipo: ${pokemonTipo}</p>
+  </div>`;
 };
+
