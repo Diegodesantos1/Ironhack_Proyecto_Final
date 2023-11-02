@@ -5,7 +5,15 @@ let palabraFinal = palabras[Math.floor(Math.random() * palabras.length)];
 let intentos = 6;
 let historialAdivinanzas = [];
 
-// Defino la función que se ejecuta cuando se carga la página
+// Me conecto al archivo JSON para obtener los datos de los Pokémon
+const requestURL = 'https://diegodesantos1.github.io/Ironhack_Proyecto_Final/data/pokemon.json';
+
+// creo una solicitud para obtener los datos del archivo JSON
+
+const request = new XMLHttpRequest();
+request.open("GET", requestURL);
+request.responseType = "json";
+request.send();
 
 document.addEventListener("DOMContentLoaded", () => {
   // Obtiene el valor de 'letters' desde los parámetros de la URL para establecer el número de letras de la palabra
@@ -23,7 +31,59 @@ document.addEventListener("DOMContentLoaded", () => {
       alert(`No se encontraron palabras de ${letters} letras.`);
     }
   }
+  // Crear elementos en el DOM para mostrar la información del Pokémon
+  const pokemonData = document.getElementById("pokemon-data");
+  const pokemonDataGeneracion = document.createElement("div");
+  const pokemonDataAltura = document.createElement("div");
+  const pokemonDataPeso = document.createElement("div");
+  const pokemonDataTipo = document.createElement("div");
+  const pokemonDataEspecies = document.createElement("div");
 
+  // Al recibir los datos del Pokémon del archivo JSON, actualiza los elementos en el DOM
+  request.onload = function () {
+    const pokemon = request.response;
+
+    // Buscar el Pokémon que coincida con la palabra clave
+    let pokemonEncontrado = null;
+
+    const palabraFinalMinusculas = palabraFinal.toLowerCase();
+
+    for (let i = 0; i < pokemon.length; i++) {
+      if (pokemon[i].name.toLowerCase() === palabraFinalMinusculas) {
+        pokemonEncontrado = pokemon[i];
+        break; // Terminar la búsqueda una vez que se encuentre el Pokémon
+      }
+    }
+
+    // Acceder a las propiedades del Pokémon encontrado
+    const pokemonGeneracion = pokemonEncontrado.gen;
+    const pokemonAltura = pokemonEncontrado.height;
+    const pokemonPeso = pokemonEncontrado.weight;
+    const pokemonTipo = pokemonEncontrado.type;
+    const pokemonEspecies = pokemonEncontrado.species;
+
+    // Actualizar los elementos en el DOM con la información del Pokémon
+    pokemonDataGeneracion.textContent = "Generación: " + pokemonGeneracion;
+    pokemonDataAltura.textContent = "Altura: " + pokemonAltura;
+    pokemonDataPeso.textContent = "Peso: " + pokemonPeso;
+    pokemonDataTipo.textContent = "Tipo: " + pokemonTipo;
+    pokemonDataEspecies.textContent = "Especies: " + pokemonEspecies;
+
+
+    // Establecer el estilo de los elementos en el DOM
+    pokemonDataGeneracion.style.display = "none";
+    pokemonDataAltura.style.display = "none";
+    pokemonDataPeso.style.display = "none";
+    pokemonDataTipo.style.display = "none";
+    pokemonDataEspecies.style.display = "none";
+
+    // Agregar los elementos al contenedor "pokemon-data"
+    pokemonData.appendChild(pokemonDataPeso);
+    pokemonData.appendChild(pokemonDataAltura);
+    pokemonData.appendChild(pokemonDataGeneracion);
+    pokemonData.appendChild(pokemonDataEspecies);
+    pokemonData.appendChild(pokemonDataTipo);
+  }
   // Defino las variables de las imágenes
 
   const imagenPokemonSolucion = document.getElementById("resultado");
@@ -142,34 +202,44 @@ document.addEventListener("DOMContentLoaded", () => {
       imagenPokemonBorrosa.style.display = "none";
       imagenPokemonMuyBorrosa.style.display = "none";
       imagenPokemonSolucion.style.display = "block";
+      pokemonDataGeneracion.style.display = "block";
+      pokemonDataAltura.style.display = "block";
+      pokemonDataPeso.style.display = "block";
+      pokemonDataTipo.style.display = "block";
       document.getElementById("mensaje-victoria").style.display = "block";
       const victoria = document.createElement("div");
       victoria.innerHTML = "¡Has ganado!";
       document.getElementById("submit").style.display = "none";
       document.getElementById("attempts").style.display = "none";
       document.getElementById("attempts2").style.display = "none";
+
     }
 
     // Muestro una imagen a modo de pista según el número de intentos restantes
 
     else if (intentos === 5 && palabraFinal !== guess) {
       imagenPokemonMuyBorrosa.style.display = "block";
+      pokemonDataPeso.style.display = "block";
     }
     else if (intentos === 4 && palabraFinal !== guess) {
       imagenPokemonMuyBorrosa.style.display = "none";
       imagenPokemonBorrosa.style.display = "block";
+      pokemonDataAltura.style.display = "block";
     }
     else if (intentos === 3 && palabraFinal !== guess) {
       imagenPokemonBorrosa.style.display = "none";
       imagenPokemonSilueta.style.display = "block";
+      pokemonDataGeneracion.style.display = "block";
     }
     else if (intentos === 2 && palabraFinal !== guess) {
       imagenPokemonSilueta.style.display = "none";
       imagenPokemonBorrosaColor.style.display = "block";
+      pokemonDataEspecies.style.display = "block";
     }
     else if (intentos === 1 && palabraFinal !== guess) {
       imagenPokemonBorrosaColor.style.display = "none";
       imagenPokemonSolucion.style.display = "block";
+      pokemonDataTipo.style.display = "block";
     }
 
     // si el jugador falla en el último intento, muestra la palabra de solución
@@ -179,7 +249,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       var solucionElement = document.getElementById("solucion");
       var palabraSolucion = palabraFinal;
-      solucionElement.innerHTML = palabraSolucion;
+      solucionElement.innerHTML = "¡Perdiste! La solución era " + palabraSolucion;
       document.getElementById("submit").style.display = "none";
       intento_palabra.disabled = true;
     }
@@ -191,49 +261,4 @@ const volverAJugarButton = document.getElementById('volver-a-jugar');
 volverAJugarButton.addEventListener('click', () => {
   window.location.href = 'index.html';
 });
-
-// Me conecto al archivo JSON para obtener los datos de los Pokémon
-const requestURL = 'https://diegodesantos1.github.io/Ironhack_Proyecto_Final/data/pokemon.json';
-
-// creo una solicitud para obtener los datos del archivo JSON
-
-const request = new XMLHttpRequest();
-request.open("GET", requestURL);
-request.responseType = "json";
-request.send();
-
-// Cuando la solicitud se complete, ejecuto la función
-
-request.onload = function () {
-  const pokemon = request.response;
-
-  // Busco el Pokémon que coincida con la palabra clave
-  let pokemonEncontrado = null;
-
-  const palabraFinalMinusculas = palabraFinal.toLowerCase();
-
-  for (let i = 0; i < pokemon.length; i++) {
-    if (pokemon[i].name.toLowerCase() === palabraFinalMinusculas) {
-      pokemonEncontrado = pokemon[i];
-      break; // Termina la búsqueda una vez que se encuentre el Pokémon
-    }
-  }
-
-  
-  // Accedo a las propiedades del Pokémon encontrado
-  const pokemonGeneracion = pokemonEncontrado.gen;
-  const pokemonAltura = pokemonEncontrado.height;
-  const pokemonPeso = pokemonEncontrado.weight;
-  const pokemonTipo = pokemonEncontrado.type;
-  const pokemonEvoluciones = pokemonEncontrado.evolution;
-
-  // Muestra los valores del Pokémon en la página dentro del div "pokemon-data"
-  const pokemonData = document.getElementById("pokemon-data");
-  pokemonData.innerHTML = `<div class="pokemon-data">
-    <p>Generación: ${pokemonGeneracion}</p>
-    <p>Altura: ${pokemonAltura}</p>
-    <p>Peso: ${pokemonPeso}</p>
-    <p>Tipo: ${pokemonTipo}</p>
-  </div>`;
-};
 
