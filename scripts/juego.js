@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Creo los elementos en el DOM para mostrar la información del Pokémon
-  const pokemonData = document.getElementById("pokemon-data");
+  const pokemonData = document.getElementById("datos-pokemon");
   const pokemonDataGeneracion = document.createElement("div");
   const pokemonDataAltura = document.createElement("div");
   const pokemonDataPeso = document.createElement("div");
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
     pokemonDataTipo.style.display = "none";
     pokemonDataEspecies.style.display = "none";
 
-    // Agrego los elementos al contenedor "pokemon-data"
+    // Agrego los elementos al contenedor "datos"
 
     pokemonData.appendChild(pokemonDataPeso);
     pokemonData.appendChild(pokemonDataAltura);
@@ -195,13 +195,13 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    // Ahora creo un div para cada adivinanza y lo añado al historial de adivinanzas insertando el div en el div con el id "guess-history" y un salto de línea al final de cada adivinanza en el historial
+    // Ahora creo un div para cada adivinanza y lo añado al historial de adivinanzas insertando el div en el div con el id "historial" y un salto de línea al final de cada adivinanza en el historial
 
     const guessDiv = document.createElement("div");
     const br = document.createElement("br");
 
-    document.getElementById("guess-history").appendChild(guessDiv);
-    document.getElementById("guess-history").appendChild(br);
+    document.getElementById("historial").appendChild(guessDiv);
+    document.getElementById("historial").appendChild(br);
     guessDiv.innerHTML = mostrarLetra;
 
     // Resto un intento y actualizo el número de intentos restantes

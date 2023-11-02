@@ -19,7 +19,8 @@
 <body>
   <h1 id="title">Pokédle</h1>
   <div id="container">
-    <div id="guess-history"></div>
+    <div id="historial">
+    </div>
     <div id="pokemons">
       <img id="resultado" src="" alt="Solución" style="align-items: center;">
       <img id="muy-borrosa" src="" alt="Silueta muy borrosa del Pokémon">
@@ -29,7 +30,7 @@
     </div>
     <div id="respuesta">
       <div id="guess-input">
-        <input type="text" id="intento" placeholder="Introduzca el nombre">
+        <input type="text" id="intento" placeholder="Introduzca el Nombre">
         <button id="jugar">Enviar</button>
       </div>
       <div id="mensaje-victoria" style="display: none;">¡Enhorabuena, acertaste!</div>
@@ -38,8 +39,7 @@
       <p id="solucion"><span id="solucion"></span></p>
       <button id="volver-a-jugar">Volver al menú</button>
     </div>
-    <div id="pokemon-data">
-      </div>
+    <div id="datos-pokemon">
     </div>
   </div>
   <script type="module" src="scripts/inicio.js"></script>

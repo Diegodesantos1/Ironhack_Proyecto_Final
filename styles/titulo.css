@@ -1,3 +1,5 @@
+/* Estilos del h1*/
+
 h1 {
   color: hsla(0, 0%, 0%, .9);
   font: normal 140px Varela Round, sans-serif;
@@ -7,6 +9,8 @@ h1 {
   margin-bottom: 30px;
   text-align: center;
 }
+
+/* Animación del título con porcentajes*/
 
 @keyframes move {
   0% {

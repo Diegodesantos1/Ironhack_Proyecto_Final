@@ -1,7 +1,11 @@
+/*Defino los estilos del html */
+
 html {
     background: #F0F0D8;
     font-family: "Azonix", sans-serif;
 }
+
+/*Estilos del menú inicial en una cuádricula con los botones */
 
 #menu_inicial {
     display: grid;
@@ -20,6 +24,8 @@ html {
     margin: 0 auto;
 }
 
+/* Estilos de la cuádricula */
+
 .grid-container {
     margin-top: 1000px;
     display: grid;
@@ -30,6 +36,8 @@ html {
     margin: 0 auto;
     height: 250px;
 }
+
+/* Estilos del contenedor principal */
 
 #container {
     display: grid;
@@ -44,7 +52,10 @@ html {
     margin: 0 auto;
 }
 
-#guess-history, #pokemons {
+/* Estilos del historial y las imágenes de los pokémon */
+
+#historial,
+#pokemons {
     margin: 0 70px;
     padding: 30px;
     margin-top: 40px;
@@ -55,14 +66,19 @@ html {
 img {
     margin-left: 25%;
 }
+
+/* Estilos de la respuesta y de los datos de los pokemon */
+
 #respuesta,
-#pokemon-data {
+#datos-pokemon {
     margin: 0 70px;
     padding: 30px;
     margin-top: 30px;
     border-radius: 10px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
 }
+
+/* Estilos del botón junto a su hover */
 
 button {
     font-family: "Azonix", sans-serif;
@@ -78,6 +94,9 @@ button {
     }
 }
 
+
+/* Estilos del input */
+
 input {
     font-family: "Azonix", sans-serif;
     background: transparent;
@@ -88,13 +107,9 @@ input {
     border-radius: 10px;
 }
 
-#result {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
-}
 
-/* Estilos para las letras adivinadas */
+/* Estilos para las letras */
+
 .green,
 .yellow,
 .red {
