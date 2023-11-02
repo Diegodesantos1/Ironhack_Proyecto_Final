@@ -21,6 +21,14 @@
   <header>
     <h1 id="title">Pokédle</h1>
   </header>
+  <nav>
+    <ul class="navbar">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Acerca</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
   <div id="container">
     <div id="historial">
     </div>
@@ -36,15 +44,27 @@
         <input type="text" id="intento" placeholder="Introduzca el Nombre">
         <button id="jugar">Enviar</button>
       </div>
-      <div id="mensaje-victoria" style="display: none;">¡Enhorabuena, acertaste!</div> <!- Uso display none para luegomostralo con el js en función del resultado del juego ->
-      <div id="mensaje-derrota" style="display: none;">¡Has perdido!</div> <!- Uso display none para luegomostralo con el js en función del resultado del juego ->
-      <p id="attempts2">Intentos restantes: <span id="attempts">6</span></p>
-      <p id="solucion"><span id="solucion"></span></p>
-      <button id="volver-a-jugar">Volver al menú</button>
+      <div id="mensaje-victoria" style="display: none;">¡Enhorabuena, acertaste!</div> <!- Uso display none para luego
+        mostralo con el js en función del resultado del juego ->
+        <div id="mensaje-derrota" style="display: none;">¡Has perdido!</div> <!- Uso display none para luegomostralo con
+          el js en función del resultado del juego ->
+          <p id="attempts2">Intentos restantes: <span id="attempts">6</span></p>
+          <p id="solucion"><span id="solucion"></span></p>
+          <button id="volver-a-jugar">Volver al menú</button>
     </div>
     <div id="datos-pokemon">
     </div>
   </div>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2023 Pokédle</p>
+      <ul>
+        <li><a href="#">Aviso Legal</a></li>
+        <li><a href="#">Política de Privacidad</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </footer>
   <script type="module" src="scripts/inicio.js"></script>
   <script type="module" src="scripts/juego.js"></script>
 </body>

@@ -5,8 +5,44 @@ html {
     font-family: "Azonix", sans-serif;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 p{
     font-size: 17px;
+}
+
+/*Estilos del navbar */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #41403E;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: #c6f09e;
 }
 /*Estilos del menú inicial en una cuádricula con los botones */
 
@@ -148,4 +184,44 @@ input {
 
 .red {
     color: red;
+}
+
+/* Estilos para el footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-content p {
+    font-size: 14px;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    color: #c6f09e;
 }
