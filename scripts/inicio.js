@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Actualiza el valor de "maxlength" del campo de entrada según el valor de "letters"
   if (letters) {
-    const guessInput = document.getElementById("guess");
+    const guessInput = document.getElementById("intento");
     guessInput.setAttribute("maxlength", letters);
   }
 });

@@ -6,6 +6,7 @@ let intentos = 6;
 let historialAdivinanzas = [];
 
 // Me conecto al archivo JSON para obtener los datos de los Pokémon
+
 const requestURL = 'https://diegodesantos1.github.io/Ironhack_Proyecto_Final/data/pokemon.json';
 
 // creo una solicitud para obtener los datos del archivo JSON
@@ -15,7 +16,10 @@ request.open("GET", requestURL);
 request.responseType = "json";
 request.send();
 
+// Ejecuto el código cuando se cargue el DOM
+
 document.addEventListener("DOMContentLoaded", () => {
+
   // Obtiene el valor de 'letters' desde los parámetros de la URL para establecer el número de letras de la palabra
   const urlParams = new URLSearchParams(window.location.search);
   const letters = urlParams.get("letters");
@@ -31,7 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
       alert(`No se encontraron palabras de ${letters} letras.`);
     }
   }
-  // Crear elementos en el DOM para mostrar la información del Pokémon
+
+  // Creo los elementos en el DOM para mostrar la información del Pokémon
   const pokemonData = document.getElementById("pokemon-data");
   const pokemonDataGeneracion = document.createElement("div");
   const pokemonDataAltura = document.createElement("div");
@@ -40,10 +45,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const pokemonDataEspecies = document.createElement("div");
 
   // Al recibir los datos del Pokémon del archivo JSON, actualiza los elementos en el DOM
+
   request.onload = function () {
     const pokemon = request.response;
 
-    // Buscar el Pokémon que coincida con la palabra clave
+    // Hago un bucle para buscar el Pokémon que coincida con la palabra clave
+
     let pokemonEncontrado = null;
 
     const palabraFinalMinusculas = palabraFinal.toLowerCase();
@@ -51,39 +58,43 @@ document.addEventListener("DOMContentLoaded", () => {
     for (let i = 0; i < pokemon.length; i++) {
       if (pokemon[i].name.toLowerCase() === palabraFinalMinusculas) {
         pokemonEncontrado = pokemon[i];
-        break; // Terminar la búsqueda una vez que se encuentre el Pokémon
+        break;
       }
     }
 
-    // Acceder a las propiedades del Pokémon encontrado
+    // Accedo a las propiedades del Pokémon encontrado
+
     const pokemonGeneracion = pokemonEncontrado.gen;
     const pokemonAltura = pokemonEncontrado.height;
     const pokemonPeso = pokemonEncontrado.weight;
     const pokemonTipo = pokemonEncontrado.type;
     const pokemonEspecies = pokemonEncontrado.species;
 
-    // Actualizar los elementos en el DOM con la información del Pokémon
+    // Actualizo los elementos en el DOM con la información del Pokémon
+
     pokemonDataGeneracion.textContent = "Generación: " + pokemonGeneracion;
     pokemonDataAltura.textContent = "Altura: " + pokemonAltura;
     pokemonDataPeso.textContent = "Peso: " + pokemonPeso;
     pokemonDataTipo.textContent = "Tipo: " + pokemonTipo;
     pokemonDataEspecies.textContent = "Especies: " + pokemonEspecies;
 
+    // Establezco el estilo de los elementos en el DOM
 
-    // Establecer el estilo de los elementos en el DOM
     pokemonDataGeneracion.style.display = "none";
     pokemonDataAltura.style.display = "none";
     pokemonDataPeso.style.display = "none";
     pokemonDataTipo.style.display = "none";
     pokemonDataEspecies.style.display = "none";
 
-    // Agregar los elementos al contenedor "pokemon-data"
+    // Agrego los elementos al contenedor "pokemon-data"
+
     pokemonData.appendChild(pokemonDataPeso);
     pokemonData.appendChild(pokemonDataAltura);
     pokemonData.appendChild(pokemonDataGeneracion);
     pokemonData.appendChild(pokemonDataEspecies);
     pokemonData.appendChild(pokemonDataTipo);
   }
+
   // Defino las variables de las imágenes
 
   const imagenPokemonSolucion = document.getElementById("resultado");
@@ -110,13 +121,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Ejecuto la función jugar al hacer click en el botón "Submit"
 
-  document.getElementById("submit").addEventListener("click", () => {
+  document.getElementById("jugar").addEventListener("click", () => {
     jugar();
   });
 
   // Obtengo la referencia al campo de entrada
 
-  const intento_palabra = document.getElementById("guess");
+  const intento_palabra = document.getElementById("intento");
 
   // Ejecuto la función jugar al presionar la tecla "Enter"
 
@@ -129,6 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Defino la función principal del juego
 
   function jugar() {
+
     // Si el número de letras de la palabra es diferente al número de letras del campo de entrada, muestra una alerta
 
     if (intento_palabra.value.length !== palabraFinal.length) {
@@ -155,6 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const LetrasIncorrectas = new Set();
 
     // Establezco el bucle para comprobar si la letra está en la palabra
+
     for (let i = 0; i < palabraFinal.length; i++) {
 
       // Si la letra está en la palabra, la añado al set de letras correctas y la muestro en verde
@@ -163,6 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
         mostrarLetra += `<span class="letter green">${guess[i]}</span>`;
         LetrasCorrectas.add(guess[i]);
       }
+
       // Si no, la añado al set de letras incorrectas y la muestro en rojo
 
       else {
@@ -174,6 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Compruebo si la letra está en la palabra pero no en la posición correcta y la muestro en amarillo
+
     for (let i = 0; i < palabraFinal.length; i++) {
       if (!LetrasCorrectas.has(guess[i]) && LetrasIncorrectas.has(guess[i])) {
         mostrarLetra = mostrarLetra.replace(`<span class="letter red">${guess[i]}</span>`, `<span class="letter yellow">${guess[i]}</span>`);
@@ -183,10 +198,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // Ahora creo un div para cada adivinanza y lo añado al historial de adivinanzas insertando el div en el div con el id "guess-history" y un salto de línea al final de cada adivinanza en el historial
 
     const guessDiv = document.createElement("div");
-    guessDiv.innerHTML = mostrarLetra;
-    document.getElementById("guess-history").appendChild(guessDiv);
     const br = document.createElement("br");
+
+    document.getElementById("guess-history").appendChild(guessDiv);
     document.getElementById("guess-history").appendChild(br);
+    guessDiv.innerHTML = mostrarLetra;
 
     // Resto un intento y actualizo el número de intentos restantes
 
@@ -195,6 +211,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (intentos >= 0 && palabraFinal === guess) {
 
       // Muestro el mensaje de victoria, oculto el botón de enviar y muestro el botón de volver a jugar para redirigir a la página "index.html"
+
+      let victoria = document.createElement("div");
 
       intento_palabra.style.display = "none";
       imagenPokemonSilueta.style.display = "none";
@@ -206,16 +224,18 @@ document.addEventListener("DOMContentLoaded", () => {
       pokemonDataAltura.style.display = "block";
       pokemonDataPeso.style.display = "block";
       pokemonDataTipo.style.display = "block";
+      pokemonDataEspecies.style.display = "block";
+
       document.getElementById("mensaje-victoria").style.display = "block";
-      const victoria = document.createElement("div");
-      victoria.innerHTML = "¡Has ganado!";
-      document.getElementById("submit").style.display = "none";
+      document.getElementById("intento").style.display = "none";
+      document.getElementById("jugar").style.display = "none";
       document.getElementById("attempts").style.display = "none";
       document.getElementById("attempts2").style.display = "none";
 
+      victoria.innerHTML = "¡Has ganado!";
     }
 
-    // Muestro una imagen a modo de pista según el número de intentos restantes
+    // Muestro una imagen y una pista según el número de intentos restantes
 
     else if (intentos === 5 && palabraFinal !== guess) {
       imagenPokemonMuyBorrosa.style.display = "block";
@@ -242,19 +262,27 @@ document.addEventListener("DOMContentLoaded", () => {
       pokemonDataTipo.style.display = "block";
     }
 
-    // si el jugador falla en el último intento, muestra la palabra de solución
+    // Si el jugador falla en el último intento, muestra la palabra de solución
 
     else if (intentos === 0 && palabraFinal !== guess) {
-      // Muestro el mensaje de derrota, oculto el botón de enviar y muestro el botón de volver a jugar para redirigir a la página "index.html"
 
-      var solucionElement = document.getElementById("solucion");
-      var palabraSolucion = palabraFinal;
-      solucionElement.innerHTML = "¡Perdiste! La solución era " + palabraSolucion;
-      document.getElementById("submit").style.display = "none";
+      // Muestro el mensaje de derrota, oculto el botón de enviar y muestro la solución
+
+      let solucionElement = document.getElementById("solucion");
+      let palabraSolucion = palabraFinal;
+
       intento_palabra.disabled = true;
+      solucionElement.innerHTML = "La solución era " + palabraSolucion;
+      document.getElementById("mensaje-derrota").style.display = "block";
+      document.getElementById("jugar").style.display = "none";
+      document.getElementById("attempts").style.display = "none";
+      document.getElementById("attempts2").style.display = "none";
+      document.getElementById("intento").style.display = "none";
     }
   }
 });
+
+// Defino la función para volver a jugar
 
 const volverAJugarButton = document.getElementById('volver-a-jugar');
 
