@@ -18,7 +18,9 @@
 </head>
 
 <body>
-  <h1 id="title">Pokédle</h1>
+  <header>
+    <h1 id="title">Pokédle</h1>
+  </header>
   <div id="container">
     <div id="historial">
     </div>
@@ -34,8 +36,8 @@
         <input type="text" id="intento" placeholder="Introduzca el Nombre">
         <button id="jugar">Enviar</button>
       </div>
-      <div id="mensaje-victoria" style="display: none;">¡Enhorabuena, acertaste!</div>
-      <div id="mensaje-derrota" style="display: none;">¡Has perdido!</div>
+      <div id="mensaje-victoria" style="display: none;">¡Enhorabuena, acertaste!</div> <!- Uso display none para luegomostralo con el js en función del resultado del juego ->
+      <div id="mensaje-derrota" style="display: none;">¡Has perdido!</div> <!- Uso display none para luegomostralo con el js en función del resultado del juego ->
       <p id="attempts2">Intentos restantes: <span id="attempts">6</span></p>
       <p id="solucion"><span id="solucion"></span></p>
       <button id="volver-a-jugar">Volver al menú</button>

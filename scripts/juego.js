@@ -289,4 +289,3 @@ const volverAJugarButton = document.getElementById('volver-a-jugar');
 volverAJugarButton.addEventListener('click', () => {
   window.location.href = 'index.html';
 });
-
