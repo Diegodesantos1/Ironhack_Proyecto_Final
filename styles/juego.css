@@ -1,3 +1,4 @@
+
 /*Defino los estilos del html */
 
 html {
@@ -8,17 +9,17 @@ html {
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 p {
     font-size: 15px;
 }
 
-/*Estilos del navbar */
-
 /* Estilos del navbar */
 nav {
     background-color: #41403E;
+    width: 100%;
     color: #FFFFFF;
     padding: 10px;
     text-align: center;
@@ -65,7 +66,7 @@ nav a {
     justify-content: space-between;
     max-width: 1000px;
     margin: 0 auto;
-    margin-bottom: 150px;
+    margin-bottom: 160px;
 }
 
 section {
@@ -81,39 +82,46 @@ section {
     justify-content: center;
     grid-template-columns: repeat(2, 2fr);
     justify-content: center;
-    align-items: center;
     text-align: center;
     width: 100%;
-    max-width: 1300px;
     height: 400px;
     margin: 0 auto;
     margin-bottom: 100px;
 }
 
-/* Estilos del historial y las imágenes de los pokémon */
+/* Media query para pantallas pequeñas (menos de 768px de ancho) */
+@media (max-width: 767px) {
+    #container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Estilos del historial, las imágenes de los pokémon, la respuestay los datos del pokémon */
 
 #historial,
-#pokemons {
-    margin: 0 70px;
-    padding: 30px;
-    margin-top: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
-}
-
-img {
-    margin-left: 25%;
-}
-
-/* Estilos de la respuesta y de los datos de los pokemon */
-
 #respuesta,
 #datos-pokemon {
     margin: 0 70px;
     padding: 30px;
-    margin-top: 30px;
+    margin-top: 20px;
     border-radius: 10px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+}
+
+#pokemons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 70px;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+}
+
+#pokemon img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* Estilos del botón junto a su hover */
