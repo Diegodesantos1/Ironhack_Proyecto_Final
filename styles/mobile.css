@@ -1,0 +1,20 @@
+/* mobile.css */
+
+/* Media query para pantallas pequeñas (menos de 768px de ancho) */
+@media (max-width: 767px) {
+    /* Ajustes específicos para móvil */
+    #container {
+        grid-template-columns: 1fr;
+    }
+
+    #historial,
+    #respuesta,
+    #datos-pokemon,
+    #pokemons {
+        max-width: 250px;
+    }
+
+    p {
+        font-size: 11px;
+    }
+}
