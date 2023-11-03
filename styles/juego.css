@@ -90,7 +90,7 @@ section {
 }
 
 /* Media query para pantallas pequeñas (menos de 768px de ancho) */
-@media (max-width: 767px) {
+@media (max-width: 767px){
     #container {
         grid-template-columns: 1fr;
     }
