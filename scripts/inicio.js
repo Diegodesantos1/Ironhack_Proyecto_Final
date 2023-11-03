@@ -27,3 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
     guessInput.setAttribute("maxlength", letters);
   }
 });
+
+const boton2 = document.getElementById("boton-tutorial");
+
+boton2.addEventListener("click", () => {
+  window.location.href = "tutorial.html";
+});

@@ -4,19 +4,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"> <!- Para que se adapte a la pantalla ->
-  <title>Pokédle</title>
-  <link rel="icon" href="fonts/logo.png" type="image/png">
-  <link rel="stylesheet" href="styles/juego.css">
-  <link rel="stylesheet" href="styles/titulo.css">
-  <!- Cargo la fuente ->
-    <style>
-      @font-face {
-        font-family: 'Azonix';
-        src: url('fonts/Azonix.otf') format('opentype');
-        font-weight: normal;
-        font-style: normal;
-      }
-    </style>
+    <title>Pokédle</title>
+    <link rel="icon" href="fonts/logo.png" type="image/png">
+    <link rel="stylesheet" href="styles/juego.css">
+    <link rel="stylesheet" href="styles/titulo.css">
+    <link rel="stylesheet" href="styles/tutorial.css">
+    <!- Cargo la fuente ->
+      <style>
+        @font-face {
+          font-family: 'Azonix';
+          src: url('fonts/Azonix.otf') format('opentype');
+          font-weight: normal;
+          font-style: normal;
+        }
+      </style>
 </head>
 
 <body>
@@ -25,19 +26,15 @@
   </header>
   <nav>
     <ul class="navbar">
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Acerca</a></li>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="tutorial.html">Guía</a></li>
       <li><a href="#">Servicios</a></li>
-      <li><a href="#">Contacto</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
     </ul>
   </nav>
-  <div id="reglas">
-    <h2>Reglas:</h2>
-    <p>1. El objetivo del juego es adivinar el nombre del Pokémon.</p>
-    <p>2. Se dispone de 6 intentos para lograrlo.</p>
-    <p>3. Por cada respuesta incorrecta, se muestran una serie de pistas.</p>
-    <p>4. Solo son válidos nombres de pokémon existentes.</p>
-    <p>5. Puedes elegir el nivel de dificultad en función del número de letras que elijas</p>
+  <div id="tutorial">
+    <p>Antes de jugar, te recomiendo que entres al tutorial</p>
+    <button id="boton-tutorial">Tutorial</button>
   </div>
   <div id="grid-container">
     <section>
@@ -68,17 +65,21 @@
       <button id="boton-menu" data-letters="12">12 letras</button>
     </section>
   </div>
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2023 Pokédle</p>
-      <ul>
-        <li><a href="#">Aviso Legal</a></li>
-        <li><a href="#">Política de Privacidad</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </div>
-  </footer>
+  <div>
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2023 Pokédle</p>
+        <p id="hora-actual"></p>
+        <ul>
+          <li><a href="#">Aviso Legal</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
   <script type="module" src="scripts/inicio.js"></script>
+  <script type="module" src="scripts/hora.js"></script>
 </body>
 
 </html>

@@ -4,18 +4,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"> <!- Para que se adapte a la pantalla ->
-  <title>Pokédle</title>
-  <link rel="icon" href="fonts/logo.png" type="image/png">
-  <link rel="stylesheet" href="styles/juego.css">
-  <link rel="stylesheet" href="styles/titulo.css">
-  <style>
-    @font-face {
-      font-family: 'Azonix';
-      src: url('fonts/Azonix.otf') format('opentype');
-      font-weight: normal;
-      font-style: normal;
-    }
-  </style>
+    <title>Pokédle</title>
+    <link rel="icon" href="fonts/logo.png" type="image/png">
+    <link rel="stylesheet" href="styles/juego.css">
+    <link rel="stylesheet" href="styles/titulo.css">
+    <style>
+      @font-face {
+        font-family: 'Azonix';
+        src: url('fonts/Azonix.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
 </head>
 
 <body>
@@ -24,8 +24,8 @@
   </header>
   <nav>
     <ul class="navbar">
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Acerca</a></li>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="tutorial.html">Guía</a></li>
       <li><a href="#">Servicios</a></li>
       <li><a href="#">Contacto</a></li>
     </ul>
@@ -50,24 +50,30 @@
         <div id="mensaje-derrota" style="display: none;">¡Has perdido!</div> <!- Uso display none para luegomostralo con
           el js en función del resultado del juego ->
           <p id="attempts2">Intentos restantes: <span id="attempts">6</span></p>
+          <p id="cuenta-regresiva"></p>
           <p id="solucion"><span id="solucion"></span></p>
           <button id="volver-a-jugar">Volver al menú</button>
     </div>
     <div id="datos-pokemon">
     </div>
   </div>
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2023 Pokédle</p>
-      <ul>
-        <li><a href="#">Aviso Legal</a></li>
-        <li><a href="#">Política de Privacidad</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </div>
-  </footer>
+  <div>
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2023 Pokédle</p>
+        <p id="hora-actual"></p>
+        <ul>
+          <li><a href="#">Aviso Legal</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
   <script type="module" src="scripts/inicio.js"></script>
   <script type="module" src="scripts/juego.js"></script>
+  <script type="module" src="scripts/hora.js"></script>
+  <script type="module" src="scripts/cuenta-atras.js"></script>
 </body>
 
 </html>

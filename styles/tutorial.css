@@ -1,0 +1,33 @@
+#volver {
+    display: flex;
+    justify-content: center;
+    font-family: "Azonix", sans-serif;
+    background: transparent;
+    font-size: 30px;
+    padding: 15px;
+    transition: all .5s ease;
+    color: #41403E;
+    box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, .2);
+    border-radius: 10px;
+
+    &:hover {
+        background-color: #c6f09e;
+    }
+
+}
+
+#boton-tutorial {
+    font-family: "Azonix", sans-serif;
+    background: transparent;
+    padding: 15px;
+    transition: all .5s ease;
+    color: #41403E;
+    box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, .2);
+    border-radius: 10px;
+    font-size: 50px;
+    box-shadow: 10px 10px 10px #888;
+
+    &:hover {
+        background-color: #c6f09e;
+    }
+}

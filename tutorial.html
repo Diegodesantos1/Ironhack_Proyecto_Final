@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!- Para que se adapte a la pantalla ->
+        <title>Pokédle</title>
+        <link rel="icon" href="fonts/logo.png" type="image/png">
+        <link rel="stylesheet" href="styles/juego.css">
+        <link rel="stylesheet" href="styles/titulo.css">
+        <link rel="stylesheet" href="styles/tutorial.css">
+        <style>
+            @font-face {
+                font-family: 'Azonix';
+                src: url('fonts/Azonix.otf') format('opentype');
+                font-weight: normal;
+                font-style: normal;
+            }
+        </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo" style="font-size: 40px;">Tutorial de Pokédle</h1>
+    </header>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tutorial.html">Guía</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <div id="container">
+        <div id="historial">
+            <p>Aquí encontrarás un registro de tus intentos anteriores, que mediante un código de colores te indicará
+                las letras correctas e incorrectas.</p>
+        </div>
+        <div id="pokemons">
+            <img id="muy-borrosa" src="data/siluetas_pokemon/TOTODILE.png" alt="Silueta del Pokémon"
+                style="width: 150px; height: 150px;"> <!-- Imagen de ejemplo redimensionada para el tutorial -->
+            <p>Aquí encontrarás imágenes como esta una silueta de un Pokémon, la cual te ayudará a adivinar el nombre
+                correcto.</p>
+        </div>
+        <div id="respuesta">
+            <div id="guess-input">
+                <p>Utiliza el campo de entrada para escribir el nombre del Pokémon. Después, pulsa "ENTER" o "Enviar.
+                    Además de los intentos y el tiempo restante.
+                </p>
+                <input type="text" id="intento" placeholder="Introduzca el Nombre">
+                <p>Vuelve al menú</p>
+                <div id="fin-tutorial">
+                    <button id="volver">¡Entendido!</button>
+                </div>
+            </div>
+        </div>
+        <div id="datos-pokemon">
+            <p>Según falles se mostrarán pistas sobre él. Esto incluye datos como su
+                tipo, altura y peso.</p>
+        </div>
+    </div>
+    <div>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2023 Pokédle</p>
+                <p id="hora-actual"></p>
+                <ul>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="scripts/inicio.js"></script>
+    <script type="module" src="scripts/tutorial.js"></script>
+    <script type="module" src="scripts/hora.js"></script>
+</body>
+
+</html>
