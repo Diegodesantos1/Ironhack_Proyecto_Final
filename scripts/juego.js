@@ -231,6 +231,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("jugar").style.display = "none";
       document.getElementById("attempts").style.display = "none";
       document.getElementById("attempts2").style.display = "none";
+      document.getElementById("cuenta-regresiva").style.display = "none";
 
       victoria.innerHTML = "¡Has ganado!";
     }
@@ -278,6 +279,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("attempts").style.display = "none";
       document.getElementById("attempts2").style.display = "none";
       document.getElementById("intento").style.display = "none";
+      document.getElementById("cuenta-regresiva").style.display = "none";
     }
   }
 });

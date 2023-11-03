@@ -1,5 +1,5 @@
 function iniciarContador() {
-    let tiempoRestante = 150000; // 5 minutos en milisegundos
+    let tiempoRestante = 300000; // 5 minutos en milisegundos
     let intervalId; // Almacenar el identificador del intervalo
 
     function actualizarCuentaRegresiva() {
@@ -18,7 +18,6 @@ function iniciarContador() {
         if (tiempoRestante <= 0) {
             detenerContador();
             cuentaRegresiva.textContent = "Tiempo agotado. El juego ha terminado.";
-            alert("Tiempo agotado. El juego ha terminado.");
             window.location.href = "index.html";
         }
     }
