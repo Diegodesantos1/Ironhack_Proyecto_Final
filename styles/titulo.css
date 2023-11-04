@@ -3,7 +3,7 @@
 h1 {
   color: hsla(0, 0%, 0%, .9);
   font: normal 10vw Varela Round, sans-serif;
-  /* Ajusta el tamaño usando vw */
+  font-size: 100px;
   text-transform: uppercase;
   animation: move linear 2000ms infinite;
   margin: 0;
