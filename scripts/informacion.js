@@ -30,7 +30,7 @@ request.onload = function () {
             const informacionPokemon = document.getElementById("datos-pokemon");
             informacionPokemon.innerHTML = `
                 <img src="data/soluciones/${pokemonEncontrado.name}.png" alt="${pokemonEncontrado.name}">
-                <h2>${pokemonEncontrado.name}</h2>
+                <h2>${pokemonEncontrado.name.toUpperCase}</h2>
                 <p>Generación: ${pokemonEncontrado.gen}</p>
                 <p>Altura: ${pokemonEncontrado.height}</p>
                 <p>Peso: ${pokemonEncontrado.weight}</p>
