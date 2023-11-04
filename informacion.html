@@ -21,7 +21,7 @@
 
 <body>
   <header>
-    <h1 id="title">Pokédle</h1>
+    <h1 id="title" style="font-size: 40px;">Información</h1>
   </header>
   <nav>
     <ul class="navbar">
@@ -31,28 +31,11 @@
     </ul>
 </nav>
   <div id="container">
-    <div id="historial">
-    </div>
-    <div id="pokemons">
-      <img id="resultado" src="" alt="Solución" style="align-items: center;">
-      <img id="muy-borrosa" src="" alt="Silueta muy borrosa del Pokémon">
-      <img id="borrosa" src="" alt="Silueta borrosa del Pokémon">
-      <img id="borrosa-color" src="" alt="Silueta borrosa a color del Pokémon">
-      <img id="silueta" src="" alt="Silueta del Pokémon">
-    </div>
     <div id="respuesta">
       <div id="guess-input">
-        <input type="text" id="intento" placeholder="Introduzca el Nombre">
-        <button id="jugar">Enviar</button>
+        <input type="text" id="busqueda" placeholder="Introduzca el Nombre">
+        <button id="buscar">Buscar</button>
       </div>
-      <div id="mensaje-victoria" style="display: none;">¡Enhorabuena, acertaste!</div> <!- Uso display none para luego
-        mostralo con el js en función del resultado del juego ->
-        <div id="mensaje-derrota" style="display: none;">¡Has perdido!</div> <!- Uso display none para luegomostralo con
-          el js en función del resultado del juego ->
-          <p id="attempts2">Intentos restantes: <span id="attempts">6</span></p>
-          <p id="cuenta-regresiva"></p>
-          <p id="solucion"><span id="solucion"></span></p>
-          <button id="volver-a-jugar">Volver al menú</button>
     </div>
     <div id="datos-pokemon">
     </div>
@@ -71,9 +54,8 @@
     </footer>
   </div>
   <script type="module" src="scripts/inicio.js"></script>
-  <script type="module" src="scripts/juego.js"></script>
   <script type="module" src="scripts/hora.js"></script>
-  <script type="module" src="scripts/cuenta-atras.js"></script>
+  <script type="module" src="scripts/informacion.js"></script>
 </body>
 
 </html>

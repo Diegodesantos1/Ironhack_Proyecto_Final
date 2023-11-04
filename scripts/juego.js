@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (matchingWords.length > 0) {
       palabraFinal = matchingWords[Math.floor(Math.random() * matchingWords.length)];
     } else {
-      alert(`No se encontraron palabras de ${letters} letras.`);
+      alert(`No se encontraron pokémon de ${letters} letras.`);
     }
   }
 

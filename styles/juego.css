@@ -133,7 +133,7 @@ section {
 /* Estilos del botón junto a su hover */
 
 #jugar,
-#volver-a-jugar {
+#volver-a-jugar, #buscar, #volver-a-buscar {
     font-family: "Azonix", sans-serif;
     background: transparent;
     padding: 15px;
