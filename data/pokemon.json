@@ -19850,8 +19850,8 @@
       "Psíquico",
       "Fantasma"
     ],
-    "height": "Nonem",
-    "weight": "None kg",
+    "height": "0.5 m",
+    "weight": "9 kg",
     "abilities": [
       "Magician"
     ],
@@ -20519,8 +20519,8 @@
     "type": [
       "Roca"
     ],
-    "height": "Nonem",
-    "weight": "None kg",
+    "height": "0.8m",
+    "weight": "25 kg",
     "abilities": [
       "Keen Eye",
       "Sand Rush",
