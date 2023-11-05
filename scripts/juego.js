@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Si el número de letras de la palabra es diferente al número de letras del campo de entrada, muestra una alerta
 
     if (intento_palabra.value.length !== palabraFinal.length) {
-      alert(`Debes ingresar una palabra de ${palabraFinal.length} letras.`);
+      alert(`Debes ingresar un pokémon de ${palabraFinal.length} letras.`);
       return;
     }
 
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Compruebo que la palabra pertenece a la lista de palabras
 
     if (!palabras.includes(guess)) {
-      alert("Esa palabra no está en la lista.");
+      alert("No se encontró ningún Pokémon con ese nombre.");
       return;
     }
 
