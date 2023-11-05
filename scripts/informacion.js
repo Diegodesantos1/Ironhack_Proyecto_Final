@@ -25,12 +25,12 @@ request.onload = function () {
         if (pokemonEncontrado) {
             const informacionPokemon = document.getElementById("datos-pokemon");
             informacionPokemon.innerHTML = `
-                <img src="data/soluciones/${pokemonEncontrado.name}.png" alt="${pokemonEncontrado.name}">
-                <h2>${pokemonEncontrado.name.toUpperCase()}</h2>
+                <img src="data/soluciones/${pokemonEncontrado.name.toUpperCase()}.png" alt="${pokemonEncontrado.name.toUpperCase()}">
+                <h2>${pokemonEncontrado.name}</h2>
                 <p>Generación: ${pokemonEncontrado.gen}</p>
                 <p>Altura: ${pokemonEncontrado.height}</p>
                 <p>Peso: ${pokemonEncontrado.weight}</p>
-                <p>Tipo: ${pokemonEncontrado.type.join(", ")}</p>
+                <p>Tipo: ${pokemonEncontrado.type}</p>
                 <p>Especies: ${pokemonEncontrado.species}</p>
                 <p>Habilidades: ${pokemonEncontrado.abilities}</p>
             `;
@@ -58,7 +58,7 @@ request.onload = function () {
                 <p>Generación: ${pokemonEncontrado.gen}</p>
                 <p>Altura: ${pokemonEncontrado.height}</p>
                 <p>Peso: ${pokemonEncontrado.weight}</p>
-                <p>Tipo: ${pokemonEncontrado.type.join(", ")}</p>
+                <p>Tipo: ${pokemonEncontrado.type}</p>
                 <p>Especies: ${pokemonEncontrado.species}</p>
                 <p>Habilidades: ${pokemonEncontrado.abilities}</p>
             `;
