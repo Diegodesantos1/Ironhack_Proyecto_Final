@@ -20,7 +20,7 @@ request.onload = function () {
         // Buscar el Pokémon por su nombre en el array
 
         const pokemonEncontrado = pokemonData.find(pokemon => pokemon.name.toUpperCase() === busqueda);
-
+        const pokemonEncontrado_stats = Object.entries(pokemonEncontrado.stats);
         // Mostrar la información del Pokémon
         if (pokemonEncontrado) {
             const informacionPokemon = document.getElementById("datos-pokemon");
@@ -33,6 +33,7 @@ request.onload = function () {
                 <p>Tipo: ${pokemonEncontrado.type}</p>
                 <p>Especies: ${pokemonEncontrado.species}</p>
                 <p>Habilidades: ${pokemonEncontrado.abilities}</p>
+                <p>Estadísticas: ${pokemonEncontrado_stats}</p>
             `;
         } else {
             alert("No se encontró ningún Pokémon con ese nombre.");
@@ -48,7 +49,7 @@ request.onload = function () {
 
             // Buscar el Pokémon por su nombre en el array
             const pokemonEncontrado = pokemonData.find(pokemon => pokemon.name.toUpperCase() === busqueda);
-
+            const pokemonEncontrado_stats = Object.entries(pokemonEncontrado.stats);
             // Mostrar la información del Pokémon
             if (pokemonEncontrado) {
                 const informacionPokemon = document.getElementById("datos-pokemon");
@@ -61,6 +62,7 @@ request.onload = function () {
                 <p>Tipo: ${pokemonEncontrado.type}</p>
                 <p>Especies: ${pokemonEncontrado.species}</p>
                 <p>Habilidades: ${pokemonEncontrado.abilities}</p>
+                <p>Estadísticas: ${pokemonEncontrado_stats}</p>
             `;
             } else {
                 alert("No se encontró ningún Pokémon con ese nombre.");
