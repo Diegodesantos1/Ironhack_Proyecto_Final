@@ -25,8 +25,8 @@ request.onload = function () {
         if (pokemonEncontrado) {
             const informacionPokemon = document.getElementById("datos-pokemon");
             informacionPokemon.innerHTML = `
-                <img src="data/soluciones/${pokemonEncontrado.name.toUpperCase()}.png" alt="${pokemonEncontrado.name.toUpperCase()}">
                 <h2>${pokemonEncontrado.name}</h2>
+                <img src="data/soluciones/${pokemonEncontrado.name.toUpperCase()}.png" alt="${pokemonEncontrado.name.toUpperCase()}">
                 <p>Generación: ${pokemonEncontrado.gen}</p>
                 <p>Altura: ${pokemonEncontrado.height}</p>
                 <p>Peso: ${pokemonEncontrado.weight}</p>
@@ -53,8 +53,8 @@ request.onload = function () {
             if (pokemonEncontrado) {
                 const informacionPokemon = document.getElementById("datos-pokemon");
                 informacionPokemon.innerHTML = `
-                <img src="data/soluciones/${pokemonEncontrado.name.toUpperCase()}.png" alt="${pokemonEncontrado.name}">
                 <h2>${pokemonEncontrado.name}</h2>
+                <img src="data/soluciones/${pokemonEncontrado.name.toUpperCase()}.png" alt="${pokemonEncontrado.name}">
                 <p>Generación: ${pokemonEncontrado.gen}</p>
                 <p>Altura: ${pokemonEncontrado.height}</p>
                 <p>Peso: ${pokemonEncontrado.weight}</p>
