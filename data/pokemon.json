@@ -849,7 +849,7 @@
   },
   {
     "id": "029",
-    "name": "Nidoran♂",
+    "name": "NidoranF",
     "species": "Poison Pin Pokemon",
     "type": [
       "Veneno"
@@ -871,7 +871,7 @@
       "total": 275
     },
     "evolution": [
-      "Nidoran♀",
+      "Nidoran",
       "Nidorina",
       "Nidoqueen"
     ],
@@ -902,7 +902,7 @@
       "total": 365
     },
     "evolution": [
-      "NidoranÃ¢â„¢â‚¬",
+      "NidoranM",
       "Nidorina",
       "Nidoqueen"
     ],
@@ -934,7 +934,7 @@
       "total": 505
     },
     "evolution": [
-      "NidoranÃ¢â„¢â‚¬",
+      "NidoranF",
       "Nidorina",
       "Nidoqueen"
     ],
@@ -943,7 +943,7 @@
   },
   {
     "id": "032",
-    "name": "NidoranÃ¢â„¢â€š",
+    "name": "NidoranM",
     "species": "Poison Pin Pokemon",
     "type": [
       "Veneno"
@@ -965,7 +965,7 @@
       "total": 273
     },
     "evolution": [
-      "NidoranÃ¢â„¢â€š",
+      "NidoranM",
       "Nidorino",
       "Nidoking"
     ],
