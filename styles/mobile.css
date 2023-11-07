@@ -6,7 +6,6 @@
     /* Ajustes específicos para móvil */
     #container {
         grid-template-columns: 1fr;
-        margin-bottom: 700px;
     }
 
     p {
