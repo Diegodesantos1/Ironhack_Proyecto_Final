@@ -5,6 +5,16 @@ let palabraFinal = palabras[Math.floor(Math.random() * palabras.length)];
 let intentos = 6;
 let historialAdivinanzas = [];
 
+// Defino la función para reemplazar la primera ocurrencia de una cadena en otra cadena que usaré para mostrar las letras en el historial de adivinanzas
+
+String.prototype.replaceFirst = function (search, replacement) {
+  const position = this.indexOf(search);
+  if (position !== -1) {
+    return this.substring(0, position) + replacement + this.substring(position + search.length);
+  }
+  return this.toString();
+};
+
 // Ejecuto el código cuando se cargue el DOM
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -189,11 +199,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Compruebo si la letra está en la palabra pero no en la posición correcta y la muestro en amarillo
 
+    let yellowLetters = new Set(); // Rastrea las letras que se han resaltado en amarillo
+
     for (let i = 0; i < palabraFinal.length; i++) {
       if (!LetrasCorrectas.has(guess[i]) && LetrasIncorrectas.has(guess[i])) {
-        mostrarLetra = mostrarLetra.replace(`<span class="letter red">${guess[i]}</span>`, `<span class="letter yellow">${guess[i]}</span>`);
+        if (!yellowLetters.has(guess[i])) {
+          // Si la letra no se ha resaltado en amarillo, reemplázala en amarillo
+          mostrarLetra = mostrarLetra.replace(`<span class="letter red">${guess[i]}</span>`, `<span class="letter yellow">${guess[i]}</span>`);
+          yellowLetters.add(guess[i]); // Agrega la letra al conjunto de letras resaltadas en amarillo
+        }
       }
     }
+
+
 
     // Ahora creo un div para cada adivinanza y lo añado al historial de adivinanzas insertando el div en el div con el id "historial" y un salto de línea al final de cada adivinanza en el historial
 
