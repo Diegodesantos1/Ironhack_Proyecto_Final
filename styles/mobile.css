@@ -6,19 +6,35 @@
     /* Ajustes específicos para móvil */
     #container {
         grid-template-columns: 1fr;
+        margin-bottom: 1600px; /* Ajusta este valor según sea necesario */
     }
+    
 
     p {
         font-size: 11px;
     }
 
-    h1{
+    h1 {
         font-size: 20px;
     }
+
     nav {
         width: 100%;
     }
-    #intento, #busqueda {
+
+    #intento,
+    #busqueda {
         font-size: 10px;
+    }
+
+    footer {
+        position: fixed;
+        margin-top: -300px;
+        bottom: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
     }
 }

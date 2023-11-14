@@ -133,7 +133,8 @@ section {
 /* Estilos del botón junto a su hover */
 
 #jugar,
-#volver-a-jugar, #buscar {
+#volver-a-jugar,
+#buscar {
     font-family: "Azonix", sans-serif;
     background: transparent;
     padding: 15px;
@@ -176,7 +177,8 @@ input {
     border-radius: 10px;
 }
 
-#intento,#busqueda{
+#intento,
+#busqueda {
     font-size: 17px;
 }
 
