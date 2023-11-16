@@ -180,6 +180,7 @@ input {
 #intento,
 #busqueda {
     font-size: 17px;
+    margin-bottom: 10px;
 }
 
 /* Estilos para las letras */
@@ -247,4 +248,34 @@ footer {
 
 .footer-content a:hover {
     color: #c6f09e;
+}
+
+
+#scrollContainer {
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 280px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#itemList {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#itemList li {
+    padding: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#itemList li:hover {
+    background-color: #41403E;
+    color: rgb(255, 255, 255);
 }

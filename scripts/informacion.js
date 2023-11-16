@@ -15,7 +15,7 @@ request.onload = function () {
     // Definir el evento click para el botón de búsqueda
     document.getElementById("buscar").addEventListener("click", () => {
         // Obtener el valor del campo de búsqueda
-        const busqueda = document.getElementById("busqueda").value.trim().toUpperCase();
+        const busqueda = document.getElementById("intento").value.trim().toUpperCase();
 
         // Buscar el Pokémon por su nombre en el array
 
@@ -35,14 +35,16 @@ request.onload = function () {
                 <p>Habilidades: ${pokemonEncontrado.abilities}</p>
                 <p>Estadísticas: ${pokemonEncontrado_stats}</p>
             `;
+            scrollContainer.style.display = 'none';
         } else {
             alert("No se encontró ningún Pokémon con ese nombre.");
         }
         // quito el texto del campo de búsqueda
-        document.getElementById("busqueda").value = "";
+        busqueda.value = "";
+
     });
     // Definir el evento keyup para el campo de búsqueda
-    document.getElementById("busqueda").addEventListener("keyup", function (event) {
+    document.getElementById("intento").addEventListener("keyup", function (event) {
         if (event.key === "Enter") {
             // Obtener el valor del campo de búsqueda
             const busqueda = this.value.trim().toUpperCase();
@@ -72,5 +74,3 @@ request.onload = function () {
         }
     });
 };
-
-

@@ -6,9 +6,9 @@
     /* Ajustes específicos para móvil */
     #container {
         grid-template-columns: 1fr;
-        margin-bottom: 1600px; /* Ajusta este valor según sea necesario */
+        margin-bottom: 1600px;
     }
-    
+
 
     p {
         font-size: 11px;
