@@ -1,4 +1,6 @@
+
 // Función para hacer la solicitud y obtener los datos
+
 function Obtenerdatos(url) {
     // Devuelve una nueva promesa que se resuelve con los datos para asegurrse que los datos se obtienen antes de realizar acciones
     return new Promise((resolve, reject) => {
@@ -23,24 +25,12 @@ function Obtenerdatos(url) {
 // Llamada para obtener los datos y luego realizar acciones
 Obtenerdatos('https://diegodesantos1.github.io/Ironhack_Proyecto_Final/data/pokemon.json')
     .then((pokemonData) => {
-        const input = document.getElementById('intento');
-        const scroller = document.getElementById('scrollContainer');
-
-        input.addEventListener('keyup', function (event) {
+        // Código para manejar los datos una vez obtenidos y mostrarlos en el scroll
+        document.getElementById('intento').addEventListener('keyup', function () {
+            let scroller = document.getElementById('scrollContainer');
             scroller.style.display = 'block';
             const letter = this.value.trim().toUpperCase();
-
-            if (event.key === 'Enter') {
-                const firstPokemon = document.querySelector('#itemList li:first-child p');
-                if (firstPokemon) {
-                    const pokemonName = firstPokemon.textContent;
-                    input.value = pokemonName;
-                    scroller.style.display = 'none';
-                    setTimeout(() => {
-                        document.getElementById('buscar').click();
-                    }, 1);
-                }
-            } else if (letter.length > 0) {
+            if (letter.length > 0) {
                 renderPokemonByLetter(letter, pokemonData);
             } else {
                 clearItemList();
@@ -48,6 +38,7 @@ Obtenerdatos('https://diegodesantos1.github.io/Ironhack_Proyecto_Final/data/poke
             }
         });
 
+        // Código para manejar los datos una vez obtenidos y mostrarlos en el scroll
         function renderPokemonByLetter(letter, pokemonData) {
             const list = document.getElementById('itemList');
             list.innerHTML = '';
@@ -57,28 +48,26 @@ Obtenerdatos('https://diegodesantos1.github.io/Ironhack_Proyecto_Final/data/poke
                 return name.startsWith(letter);
             });
 
-            if (filteredPokemon.length === 0) {
-                scroller.style.display = 'none';
-            } else {
-                filteredPokemon.forEach((pokemon) => {
-                    const item = document.createElement('li');
-                    const nameLink = document.createElement('p');
-                    nameLink.textContent = pokemon.name;
-                    item.addEventListener('click', () => {
-                        input.value = pokemon.name;
-                        scroller.style.display = 'none';
-                    });
-                    item.appendChild(nameLink);
-                    list.appendChild(item);
+            filteredPokemon.forEach((pokemon) => {
+                const item = document.createElement('li');
+                const nameLink = document.createElement('p');
+                nameLink.textContent = pokemon.name;
+                item.addEventListener('click', () => {
+                    document.getElementById('intento').value = pokemon.name;
                 });
-            }
+                item.appendChild(nameLink);
+                list.appendChild(item);
+            });
         }
+
+        // Para borrar los items de la lista una vez realizada la búsqueda
 
         function clearItemList() {
             const list = document.getElementById('itemList');
+            const intento = document.getElementById('intento');
+            intento.value = '';
             list.innerHTML = '';
-            scroller.style.display = 'none';
-            input.value = '';
+            scrollContainer.style.display = 'none';
         }
     })
     .catch((error) => {

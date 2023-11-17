@@ -4,6 +4,7 @@ const palabras = ['BULBASAUR', 'IVYSAUR', 'VENUSAUR', 'CHARMANDER', 'CHARMELEON'
 let palabraFinal = palabras[Math.floor(Math.random() * palabras.length)];
 let intentos = 6;
 let historialAdivinanzas = [];
+let scroller = document.getElementById('scrollContainer')
 
 // Defino la función para reemplazar la primera ocurrencia de una cadena en otra cadena que usaré para mostrar las letras en el historial de adivinanzas
 
@@ -133,6 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("buscar").addEventListener("click", () => {
     jugar();
+    scroller.style.display = 'none';
   });
 
   // Obtengo la referencia al campo de entrada
@@ -214,8 +216,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // borra el contenido del campo de entrada
 
     intento_palabra.value = "";
-
-
 
     // Ahora creo un div para cada adivinanza y lo añado al historial de adivinanzas insertando el div en el div con el id "historial" y un salto de línea al final de cada adivinanza en el historial
 
