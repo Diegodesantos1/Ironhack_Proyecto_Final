@@ -40,7 +40,7 @@ request.onload = function () {
             alert("No se encontró ningún Pokémon con ese nombre.");
         }
         // quito el texto del campo de búsqueda
-        busqueda.value = "";
+        document.getElementById("intento").value = "";
 
     });
     // Definir el evento keyup para el campo de búsqueda

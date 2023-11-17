@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Ejecuto la función jugar al hacer click en el botón "Submit"
 
-  document.getElementById("jugar").addEventListener("click", () => {
+  document.getElementById("buscar").addEventListener("click", () => {
     jugar();
   });
 
@@ -211,6 +211,10 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
+    // borra el contenido del campo de entrada
+
+    intento_palabra.value = "";
+
 
 
     // Ahora creo un div para cada adivinanza y lo añado al historial de adivinanzas insertando el div en el div con el id "historial" y un salto de línea al final de cada adivinanza en el historial
@@ -246,7 +250,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       document.getElementById("mensaje-victoria").style.display = "block";
       document.getElementById("intento").style.display = "none";
-      document.getElementById("jugar").style.display = "none";
+      document.getElementById("buscar").style.display = "none";
       document.getElementById("attempts").style.display = "none";
       document.getElementById("attempts2").style.display = "none";
       document.getElementById("cuenta-regresiva").style.display = "none";
@@ -293,7 +297,7 @@ document.addEventListener("DOMContentLoaded", () => {
       intento_palabra.disabled = true;
       solucionElement.innerHTML = "La solución era " + palabraSolucion;
       document.getElementById("mensaje-derrota").style.display = "block";
-      document.getElementById("jugar").style.display = "none";
+      document.getElementById("buscar").style.display = "none";
       document.getElementById("attempts").style.display = "none";
       document.getElementById("attempts2").style.display = "none";
       document.getElementById("intento").style.display = "none";
