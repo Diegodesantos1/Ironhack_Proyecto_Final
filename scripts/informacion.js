@@ -11,6 +11,7 @@ request.send();
 // Definir el evento load para la solicitud
 request.onload = function () {
     const pokemonData = request.response;
+    const scroller = document.getElementById('scrollContainer');
 
     // Definir el evento click para el botón de búsqueda
     document.getElementById("buscar").addEventListener("click", () => {
@@ -71,6 +72,7 @@ request.onload = function () {
             }
             // quito el texto del campo de búsqueda
             this.value = "";
+            scroller.style.display = 'none';
         }
     });
 };
