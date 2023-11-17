@@ -50,8 +50,8 @@
       </div>
       <div id="mensaje-victoria" style="display: none;">¡Enhorabuena, acertaste!</div> <!- Uso display none para luego
         mostralo con el js en función del resultado del juego ->
-        <div id="mensaje-derrota" style="display: none;">¡Has perdido!</div> <!- Uso display none para luego mostralo con
-          el js en función del resultado del juego ->
+        <div id="mensaje-derrota" style="display: none;">¡Has perdido!</div> <!- Uso display none para luego mostralo
+          con el js en función del resultado del juego ->
           <p id="attempts2">Intentos restantes: <span id="attempts">6</span></p>
           <p id="cuenta-regresiva"></p>
           <p id="solucion"><span id="solucion"></span></p>
@@ -60,8 +60,20 @@
     <div id="datos-pokemon">
     </div>
   </div>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2023 Pokédle</p>
+      <p id="hora-actual"></p>
+      <ul>
+        <li><a href="avisolegal.html">Aviso Legal</a></li>
+        <li><a href="privacidad.html">Privacidad</a></li>
+        <li><a href="cookies.html">Cookies</a></li>
+      </ul>
+    </div>
+  </footer>
   <script type="module" src="scripts/inicio.js"></script>
   <script type="module" src="scripts/juego.js"></script>
+  <script type="module" src="scripts/hora.js"></script>
   <script type="module" src="scripts/cuenta-atras.js"></script>
   <script type="module" src="scripts/scroll.js"></script>
 </body>

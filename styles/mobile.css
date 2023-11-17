@@ -6,7 +6,11 @@
     /* Ajustes específicos para móvil */
     #container {
         grid-template-columns: 1fr;
-        margin-bottom: 1600px;
+        margin-bottom: 2000px;
+    }
+
+    #grid-container {
+        margin-bottom: 1000px;
     }
 
 
