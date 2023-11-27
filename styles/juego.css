@@ -149,7 +149,7 @@ section {
     }
 }
 
-#boton-menu {
+.boton-menu {
     font-family: "Azonix", sans-serif;
     background: transparent;
     padding: 15px;
