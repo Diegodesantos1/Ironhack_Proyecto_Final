@@ -4,19 +4,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Para que se adapte a la pantalla -->
-  <title>Pokédle</title>
-  <link rel="icon" href="fonts/logo.png" type="image/png">
-  <link rel="stylesheet" href="styles/juego.css">
-  <link rel="stylesheet" href="styles/titulo.css">
-  <link rel="stylesheet" href="styles/mobile.css">
-  <style>
-    @font-face {
-      font-family: 'Azonix';
-      src: url('fonts/Azonix.otf') format('opentype');
-      font-weight: normal;
-      font-style: normal;
-    }
-  </style>
+    <title>Pokédle</title>
+    <link rel="icon" href="fonts/logo.png" type="image/png">
+    <link rel="stylesheet" href="styles/juego.css">
+    <link rel="stylesheet" href="styles/titulo.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <style>
+      @font-face {
+        font-family: 'Azonix';
+        src: url('fonts/Azonix.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
 </head>
 
 <body>
@@ -34,11 +34,11 @@
     <div id="historial">
     </div>
     <div id="pokemons">
-      <img id="resultado" alt="Solución" style="align-items: center;">
-      <img id="muy-borrosa" alt="Silueta muy borrosa del Pokémon">
-      <img id="borrosa" alt="Silueta borrosa del Pokémon">
-      <img id="borrosa-color" alt="Silueta borrosa a color del Pokémon">
-      <img id="silueta" alt="Silueta del Pokémon">
+      <img id="resultado" src="/" alt="Solución" style="align-items: center;">
+      <img id="muy-borrosa" src="/" alt="Silueta muy borrosa del Pokémon">
+      <img id="borrosa" src="/" alt="Silueta borrosa del Pokémon">
+      <img id="borrosa-color" src="/" alt="Silueta borrosa a color del Pokémon">
+      <img id="silueta" src="/" alt="Silueta del Pokémon">
     </div>
     <div id="respuesta">
       <div id="guess-input">
@@ -50,12 +50,12 @@
       </div>
       <div id="mensaje-victoria" style="display: none;">¡Enhorabuena, acertaste!</div> <!--Uso display none para luego
         mostralo con el js en función del resultado del juego -->
-      <div id="mensaje-derrota" style="display: none;">¡Has perdido!</div> <!--Uso display none para luego mostralo
+        <div id="mensaje-derrota" style="display: none;">¡Has perdido!</div> <!--Uso display none para luego mostralo
           con el js en función del resultado del juego-->
-      <p id="attempts2">Intentos restantes: <span id="attempts">6</span></p>
-      <p id="cuenta-regresiva"></p>
-      <p><span id="solucion"></span></p>
-      <button id="volver-a-jugar">Volver al menú</button>
+          <p id="attempts2">Intentos restantes: <span id="attempts">6</span></p>
+          <p id="cuenta-regresiva"></p>
+          <p><span id="solucion"></span></p>
+          <button id="volver-a-jugar">Volver al menú</button>
     </div>
     <div id="datos-pokemon">
     </div>
